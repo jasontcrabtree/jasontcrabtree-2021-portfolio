@@ -1,7 +1,10 @@
 import React from 'react';
 
+import '../../styles/reset.css';
+import GlobalFooter from './GlobalFooter';
+import GlobalNav from './GlobalNav';
 import SEO from './SEO';
-import '../styles/reset.css';
+import SkipLink from './SkipLink';
 
 const GlobalLayout = (props) => {
   if (!props) return null;
@@ -10,7 +13,10 @@ const GlobalLayout = (props) => {
   return (
     <>
       <SEO image={image} title={title} location={location.pathname} />
+      <SkipLink />
+      <GlobalNav />
       <>{children}</>
+      <GlobalFooter />
     </>
   );
 };
