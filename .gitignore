@@ -68,6 +68,8 @@ yarn-error.log
 # Yarn Integrity file
 .yarn-integrity
 
+# Custom gitignore settings
 .env
 .vscode
 .netlify
+package-lock.json
