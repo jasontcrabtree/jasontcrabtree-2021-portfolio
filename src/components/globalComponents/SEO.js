@@ -44,7 +44,7 @@ export default function SEO({ title, description, location, image, imageALT }) {
         'A bright and colourful studio office with a brick facing back and a retro green iMac on a vintage desk',
     },
     website_url: {
-      url: 'https://lodestone-template.netlify.app/',
+      url: 'https://lodestone-template.netlify.app',
     },
   };
 
