@@ -39,8 +39,7 @@ export default function SEO({ title, description, location, image, imageALT }) {
     secondary_title: 'Secondary Title',
     twitter_username: '@lodestonestudio',
     social_sharing_image: {
-      url:
-        'https://images.unsplash.com/photo-1564316893853-d62a3593c84e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=3367&q=80',
+      url: 'https://images.unsplash.com/photo-1564316893853-d62a3593c84e',
       alt:
         'A bright and colourful studio office with a brick facing back and a retro green iMac on a vintage desk',
     },
