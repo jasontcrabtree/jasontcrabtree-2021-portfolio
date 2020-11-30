@@ -1,7 +1,7 @@
 import React from 'react';
 
 const PageNotFound = (props) => {
-  console.log(props);
+  if (!props) return null;
 
   return (
     <main id="main">
