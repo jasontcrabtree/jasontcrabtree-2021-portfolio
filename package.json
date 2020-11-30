@@ -2,10 +2,10 @@
   "name": "lodestone-template",
   "private": true,
   "description": "New project template for Lodestone Studio websites.",
-  "version": "1.0",
+  "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby build",
+    "build": "npm run gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
