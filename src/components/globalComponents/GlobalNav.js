@@ -5,7 +5,8 @@ const GlobalNav = () => (
   <nav>
     <ul>
       <li>
-        <Link to="/">Home</Link>
+        {/* <Link to="/">Home</Link> */}
+        hello
       </li>
     </ul>
   </nav>
