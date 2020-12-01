@@ -1,6 +1,10 @@
 import React from 'react';
 
-import '../../styles/reset.css';
+import '../../styles/globalStyles/reset.css';
+import '../../styles/globalStyles/globalDesignTokens.css';
+import '../../styles/globalStyles/globalStyles.css';
+import '../../styles/globalStyles/globalType.css';
+
 import GlobalFooter from './GlobalFooter';
 import GlobalNav from './GlobalNav';
 import SEO from './SEO';
