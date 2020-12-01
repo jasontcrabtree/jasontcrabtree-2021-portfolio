@@ -1,5 +1,10 @@
 import React from 'react';
+import styled from 'styled-components';
 import SEO from '../components/globalComponents/SEO';
+
+const HeroHeader = styled.h1`
+  color: slateblue;
+`;
 
 const index = (props) => {
   console.log('Hello');
@@ -7,7 +12,7 @@ const index = (props) => {
   return (
     <main id="main">
       <SEO />
-      <h1>Hello Lodestone Studio!</h1>
+      <HeroHeader>Hello Lodestone Studio!</HeroHeader>
     </main>
   );
 };
