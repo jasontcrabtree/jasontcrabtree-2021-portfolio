@@ -5,6 +5,8 @@ import SEO from '../components/globalComponents/SEO';
 const HeroHeader = styled.h1`
   font-weight: 400;
   letter-spacing: -0.4px;
+
+  display: flex;
 `;
 
 const index = (props) => {

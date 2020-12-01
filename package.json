@@ -50,5 +50,10 @@
   },
   "bugs": {
     "url": "https://github.com/jasontcrabtree/lodestone-template"
-  }
+  },
+  "browserslist": [
+    ">0.25%",
+    "IE 6",
+    "not op_mini all"
+  ]
 }

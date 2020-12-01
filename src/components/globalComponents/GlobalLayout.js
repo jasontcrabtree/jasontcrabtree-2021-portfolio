@@ -1,7 +1,7 @@
 import React from 'react';
 
 import '../../styles/globalStyles/reset.css';
-import '../../styles/globalStyles/globalDesignTokens.css';
+import '../../styles/globalStyles/globalTheme.css';
 import '../../styles/globalStyles/globalStyles.css';
 import '../../styles/globalStyles/globalType.css';
 
