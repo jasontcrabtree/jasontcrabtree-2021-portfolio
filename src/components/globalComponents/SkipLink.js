@@ -1,7 +1,7 @@
 import React from 'react';
 
 const SkipLink = () => (
-  <a id="skip-link" href="#main">
+  <a href="#main" id="skip-link">
     Skip to Content
   </a>
 );
