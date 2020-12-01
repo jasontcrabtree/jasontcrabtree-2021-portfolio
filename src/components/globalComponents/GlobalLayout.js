@@ -14,9 +14,9 @@ const GlobalLayout = (props) => {
     <>
       <SEO image={image} title={title} location={location.pathname} />
       <SkipLink />
-      <GlobalNav />
+      {/* <GlobalNav /> */}
       <>{children}</>
-      <GlobalFooter />
+      {/* <GlobalFooter /> */}
     </>
   );
 };
