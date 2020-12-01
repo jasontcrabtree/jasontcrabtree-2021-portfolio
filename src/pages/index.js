@@ -11,7 +11,7 @@ const index = (props) => {
 
   return (
     <main id="main">
-      <SEO />
+      {/* <SEO /> */}
       <HeroHeader>Hello Lodestone Studio!</HeroHeader>
     </main>
   );
