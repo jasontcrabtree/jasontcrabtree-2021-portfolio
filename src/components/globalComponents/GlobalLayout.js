@@ -13,7 +13,7 @@ const GlobalLayout = (props) => {
   return (
     <>
       <SEO image={image} title={title} location={location.pathname} />
-      {/* <SkipLink /> */}
+      <SkipLink />
       {/* <GlobalNav /> */}
       <>{children}</>
       {/* <GlobalFooter /> */}
