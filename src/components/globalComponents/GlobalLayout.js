@@ -16,7 +16,7 @@ const GlobalLayout = (props) => {
       <SkipLink />
       <GlobalNav />
       <>{children}</>
-      {/* <GlobalFooter /> */}
+      <GlobalFooter />
     </>
   );
 };
