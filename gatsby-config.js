@@ -16,6 +16,7 @@ module.exports = {
         prismicToolbar: false,
       },
     },
+    'gatsby-plugin-netlify-cache',
     `gatsby-plugin-netlify`, // keep last in plugins array
   ],
 };
