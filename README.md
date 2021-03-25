@@ -24,3 +24,7 @@ Prismic repository at <https://lodestone-template.prismic.io/>
 - 30th Nov: Started repository
 - 15th Jan: Added CSSVars package, added preload font plugin, added Netlify Cache plugin
 - 25th Mar: Updated to Gatsby V3, force upgraded bunch of dependencies with --legacy-peer-deps. Works so we're good!
+
+## Todo
+
+- Build in theme management?
