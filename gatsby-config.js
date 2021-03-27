@@ -4,19 +4,15 @@ module.exports = {
     'gatsby-plugin-styled-components',
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-react-helmet-async`,
+    `gatsby-plugin-preload-fonts`,
     {
-      resolve: 'gatsby-source-prismic',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        repositoryName: 'lodestone-template',
-        schemas: {
-          home_page: require('./src/schemas/home_page.json'),
-          global_navigation: require('./src/schemas/global_navigation.json'),
-          default_seo_settings: require('./src/schemas/default_seo_settings.json'),
-        },
-        prismicToolbar: false,
+        name: `work`,
+        path: `${__dirname}/src/case-studies/`,
       },
     },
-    'gatsby-plugin-netlify-cache',
+    `gatsby-plugin-mdx`,
     `gatsby-plugin-netlify`, // keep last in plugins array
   ],
 };

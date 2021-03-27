@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SEO from '../components/globalComponents/SEO';
+import SEO from '../components/utils/SEO';
 
 const PageTwo = (props) => {
   if (!props) return null;

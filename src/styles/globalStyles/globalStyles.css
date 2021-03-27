@@ -1,5 +1,5 @@
 /* autoprefixer grid: autoplace */
-main > * + * {
+/* main > * + * {
   margin-top: 2rem;
 }
 
@@ -12,4 +12,4 @@ html {
 
   border: 1px solid rgb(218, 213, 248);
   border-radius: 4px;
-}
+} */

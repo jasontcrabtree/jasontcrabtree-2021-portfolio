@@ -3,6 +3,6 @@ import React from 'react';
 
 import GlobalLayout from './src/components/globalComponents/GlobalLayout';
 
-export function wrapPageElement({ element, props, data }) {
+export function wrapPageElement({ element, props }) {
   return <GlobalLayout {...props}>{element}</GlobalLayout>;
 }
