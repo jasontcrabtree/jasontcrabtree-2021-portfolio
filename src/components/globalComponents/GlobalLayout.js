@@ -17,8 +17,8 @@ import BgColumn from '../utils/BgColumn';
 
 cssVars({
   include: 'style',
-  onlyLegacy: false,
-  watch: false,
+  onlyLegacy: true,
+  watch: true,
   // variables: {
   //   '--link-700': 'rgb(6, 129, 151)',
   // },

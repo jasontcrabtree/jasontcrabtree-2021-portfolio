@@ -4,10 +4,7 @@ description: Reviewing the visual and user experience design of 16 iPhone Event 
 title: Design Review of iPhone Event Countdown Apps [2020, iOS Apps]
 ---
 
-import BlogReadTime from "@/components/utils/BlogReadTime";
 import BlogPostSubscribe from "@/components/BlogPostSubscribe";
-
-<BlogReadTime readTime="3:00"/>
 
 [> Skip to my recommendation for the best, most well designed iPhone Countdown app in 2020](/blog/iphone-countdown-apps-design-review/#final-recommendation-days-app)
 
