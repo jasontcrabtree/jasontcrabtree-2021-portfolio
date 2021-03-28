@@ -1,15 +1,10 @@
-/* autoprefixer grid: autoplace */
-/* main > * + * {
-  margin-top: 2rem;
+/* Because we've globally removed list items on all lists by default, we need to re-add them for our markdown posts.
+This has a high level of specificity and should work fine
+
+Instances where this matters:
+CaseStudies
+BlogPosts
+*/
+article > ul > li {
+  list-style-type: disc;
 }
-
-html {
-  max-width: 40rem;
-  width: auto;
-
-  margin: 4rem auto;
-  padding: 1.5rem;
-
-  border: 1px solid rgb(218, 213, 248);
-  border-radius: 4px;
-} */

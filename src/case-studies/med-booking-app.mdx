@@ -1,19 +1,17 @@
 ---
 title: 'iOS App Design Concept: OpenMed Personal Medical Care Management'
-description: 'A conceptual app for patients to manage personal medical care, treatments, appointments and practitioners.'
+description: 'An app concept for patients to manage medical care, treatments, appointments and practitioners.'
 date: 2019-06-18
 image: 'https://res.cloudinary.com/jasontcrabtree/image/upload/v1581522542/Portfolio-2020/openmed-header-x2.png'
-# image: '~/assets/images/med-care-app/process.png'
+# image: '/assets/images/med-care-app/process.png'
 ---
 
-<!-- // import CaseStudyReadTime from "@/components/utils/CaseStudyReadTime";
-// import SplitContent from "@/components/SplitContent";
-// import ImgLarge from "@/components/ImgLarge";
-// import OpenMedPrototype from "@/components/OpenMedPrototype"; -->
 
-<CaseStudyReadTime readTime="4"/>
+import ImgLarge from '../components/contentComponents/ImgLarge.js'
+import SplitContent from '../components/contentComponents/SplitContent.js'
+import FigmaPrototypeEmbed from '../components/contentComponents/FigmaPrototypeEmbed.js'
 
-<ImgLarge imageSrc="https://res.cloudinary.com/jasontcrabtree/image/upload/v1581522542/Portfolio-2020/openmed-header-x4.png" alt="OpenMed iOS App Concept Home, Calendar and Treatment Screen"/>
+<ImgLarge imgSrc="https://res.cloudinary.com/jasontcrabtree/image/upload/v1581522542/Portfolio-2020/openmed-header-x4.png" imgAlt="OpenMed iOS App Concept Home, Calendar and Treatment Screen"/>
 
 ## Case Study Summary
 
@@ -47,7 +45,7 @@ rightCaption="This project was a great success. Highlights included getting more
 Experiment with the final Figma prototype and click, tap and scroll to the different screens throughout the app.
 
 *Tip: the fullscreen button for the Figma prototype is in the top right!*
-<OpenMedPrototype />
+<!--<FigmaPrototypeEmbed figmaEmbedSrc="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F8GoUOmf7L5cnHmDtjsMash%2FDoctor-Visits-Design-Study-Prompts-Project-OpenMed%3Fnode-id%3D143%253A2486%26viewport%3D1016%252C415%252C0.20559966564178467%26scaling%3Dscale-down" figmaEmbedTitle="Figma OpenMed Component" /> -->
 
 ---
 
@@ -55,27 +53,28 @@ Experiment with the final Figma prototype and click, tap and scroll to the diffe
 
 ### Design Process and Problem Exploration
 
-![The messy handwritten design process I started with, spanning 7-pages of design process templates.](~/assets/images/med-care-app/process.png)
-I won't subject you to reading my messy handwriting, circular thought process and broad exploration. Suffice to say, the circled elements on the bottom right represent the key functions that need to be fulfiled. (If you really want the details, hear's the [Process PDF.](https://www.dropbox.com/s/munwa5gzpiqpmt5/Design_Process_Prompts.pdf?dl=0))
+![The messy handwritten design process I started with, spanning 7-pages of design process templates.](/assets/images/med-care-app/process.png)
+
+I won't subject you to reading my messy handwriting, circular thought process and broad exploration. Suffice to say, the circled elements on the bottom right represent the key functions that need to be fulfiled. (If you really want the details, here's the [Process PDF.](https://www.dropbox.com/s/munwa5gzpiqpmt5/Design_Process_Prompts.pdf?dl=0))
 
 ### Brand Exploration
 
-![Brand research focusing on 70-80's colour palettes, with earthy blues, oranges, yellows and greens.](~/assets/images/med-care-app/brand-research.png)
+![Brand research focusing on 70-80's colour palettes, with earthy blues, oranges, yellows and greens.](/assets/images/med-care-app/brand-research.png)
 I chose to focus brand exploration on colour palettes from the 70's and 80's due to the warm, cheerful tone.
 
 ### Exploring Human Interface Guideline Components
 
-![Massive background image of 16+ frames with the different base HIG components I used, adapted and employed.](~/assets/images/med-care-app/apple-hig-components.png)
+![Massive background image of 16+ frames with the different base HIG components I used, adapted and employed.](/assets/images/med-care-app/apple-hig-components.png)
 I started with components from the Apple Human Interface Guideline, then adapted based on brand colours, typography and spacing.
 
 ### Halfway Work-in-Progress Shot
 
-![A work in progress shot containing the seven final screens.](~/assets/images/med-care-app/wip-midway.png)
+![A work in progress shot containing the seven final screens.](/assets/images/med-care-app/wip-midway.png)
 This progress shot shows a mix of bold colour blocks.
 
 ### The Final Eight Screens
 
-![The final designed screens, highlighting the consistentcy from screen to screen.](~/assets/images/med-care-app/final-frames.png)
+![The final designed screens, highlighting the consistentcy from screen to screen.](/assets/images/med-care-app/final-frames.png)
 The final screens have more consistentcy and a focused blue button finish. The app has five main screens, a splash screen, and two support screens.
 
 #### Breaking down the Eight Screens
@@ -95,47 +94,47 @@ The final screens have more consistentcy and a focused blue button finish. The a
 
 ### Landing Splash Screen
 
-![Landing splash screen: Main call-to-action of Get Started.](~/assets/images/med-care-app/landing.png)
+![Landing splash screen: Main call-to-action of Get Started.](/assets/images/med-care-app/landing.png)
 The splash screen represents a very basic entry to the app, with a CTA of 'Get Started'.
 
 ### Home View
 
-![Home screen view; key elements show scheduled appointments, information centre search-bar and prescription refil centre.](~/assets/images/med-care-app/home.png)
+![Home screen view; key elements show scheduled appointments, information centre search-bar and prescription refil centre.](/assets/images/med-care-app/home.png)
 The main user navigation screen.
 
 ### Ongoing Treatment Plans
 
-![Treatments view; key elements of search field and current and past prescriptions and treatments.](~/assets/images/med-care-app/treatments.png)
+![Treatments view; key elements of search field and current and past prescriptions and treatments.](/assets/images/med-care-app/treatments.png)
 Request and view new, past and present treatments.
 
 ### Calendar, Upcoming and Past Appointments
 
-![Calendar view: Showing the month of June and a form to request new appointments, plus past appointments](~/assets/images/med-care-app/calendar.png)
+![Calendar view: Showing the month of June and a form to request new appointments, plus past appointments](/assets/images/med-care-app/calendar.png)
 Appointments: View future, book new, and view past.
 
 ### Search Centre
 
-![Search Centre view: Highlighting trending questions, Search Bar and recent searches](~/assets/images/med-care-app/search.png)
+![Search Centre view: Highlighting trending questions, Search Bar and recent searches](/assets/images/med-care-app/search.png)
 An area to highlight trending medical questions and search vetted medical information sources.
 
 ### Personal Records
 
-![Records view: Patient personal information, preferred medical practioners and different practices of GP, Physiotherapist and Dentist as some examples](~/assets/images/med-care-app/records.png)
+![Records view: Patient personal information, preferred medical practioners and different practices of GP, Physiotherapist and Dentist as some examples](/assets/images/med-care-app/records.png)
 A single source for the user to store their personal information to share with medical practioners, and to store details of ongoing medical practioners.
 
 ### Contact View
 
-![Contact Screen showing emergency contact details for local 111 services, and contact info for registered medical practioners](~/assets/images/med-care-app/contact.png)
+![Contact Screen showing emergency contact details for local 111 services, and contact info for registered medical practioners](/assets/images/med-care-app/contact.png)
 Emergency contact methods for the local area, and contact methods for the users medical practioners.
 
 ### Notifications
 
-![Notification view highlighting recent messages, emails and calendar reminders, with each notification alongside a related icon](~/assets/images/med-care-app/notifications.png)
+![Notification view highlighting recent messages, emails and calendar reminders, with each notification alongside a related icon](/assets/images/med-care-app/notifications.png)
 A screen to display notifications for upcoming appointments, emails, prescription reminders and general medical care messages.
 
 ### The Final Frames with Prototyping Connections
 
-![A final shot of all eight frames with the prototyping lines from Figma connecting each image](~/assets/images/med-care-app/final-frames-prototypes.png)
+![A final shot of all eight frames with the prototyping lines from Figma connecting each image](/assets/images/med-care-app/final-frames-prototypes.png)
 A final shot showing the prototype connections between each screen, tab bar and button.
 
 ---

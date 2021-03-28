@@ -49,7 +49,7 @@ const CaseStudyTemplateStyles = styled.div`
 `;
 
 export const caseStudiesQuery = graphql`
-  query singleCaseStudy($id: String) {
+  query($id: String!) {
     mdx(id: { eq: $id }) {
       id
       body

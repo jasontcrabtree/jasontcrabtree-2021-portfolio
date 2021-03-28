@@ -6,6 +6,14 @@ module.exports = {
     `gatsby-plugin-react-helmet-async`,
     `gatsby-plugin-preload-fonts`,
     {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/, // See below to configure properly
+        },
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `work`,

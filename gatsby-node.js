@@ -14,6 +14,7 @@ async function createRepetableCaseStudies({ graphql, actions, reporter }) {
         allMdx {
           nodes {
             slug
+            id
           }
         }
       }
@@ -30,7 +31,7 @@ async function createRepetableCaseStudies({ graphql, actions, reporter }) {
       path: `/work/${node.slug}`,
       component: caseStudiesTemplate,
       context: {
-        uid: node.slug,
+        id: node.id,
       },
     });
   });
