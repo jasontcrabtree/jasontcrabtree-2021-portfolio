@@ -57,7 +57,6 @@ const GlobalNavStyles = styled.header`
 
     .nav-list {
       background-color: var(--white-opacity-80);
-      /* background-color: white; */
     }
 
     .nav-list > * {
@@ -112,7 +111,7 @@ const GlobalNav = () => (
     <nav className="nav-list">
       <Link to="/#main">Home</Link>
       <Link to="/contact">Contact</Link>
-      <a href="/jason-crabtree-resume.pdf">Résumé</a>
+      <a href="/jason-crabtree-cv-mar-2021.pdf">Résumé</a>
       <Link className="nav-hidden" to="/#work">
         Work
       </Link>

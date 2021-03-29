@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import WebsiteProjects from '../components/staticComponents/WebsiteProjects';
-import WorkListParent from '../components/staticComponents/WorkList';
+import CaseStudiesList from '../components/staticComponents/CaseStudiesList';
 
 import SEO from '../components/utils/SEO';
 import SocialProfiles from '../components/utils/SocialProfiles';
 import IndexPageStyles from '../styles/componentStyles/IndexPageStyles';
+import BlogPostsList from '../components/staticComponents/BlogPostsList';
 
 const Index = (props) => {
   if (!props) return null;
@@ -68,7 +69,7 @@ const Index = (props) => {
         {/* <ul className="work-list-container">
         </ul> */}
         {/* <WorkList v-for="edge in $page.allWork.edges" :key="edge.node.id" :work="edge.node" /> */}
-        <WorkListParent className="work-list-container" />
+        <CaseStudiesList className="work-list-container" />
       </section>
 
       <hr />
@@ -145,6 +146,7 @@ const Index = (props) => {
             :post="edge.node"
           /> */}
         </ul>
+        <BlogPostsList className="work-list-container" />
       </section>
     </IndexPageStyles>
   );

@@ -77,8 +77,7 @@ const WebsiteProjectsStyles = styled.ul`
   }
 `;
 
-function WebsiteProjects(props) {
-  console.log(props);
+function WebsiteProjects() {
   return (
     <WebsiteProjectsStyles className="work-list-container">
       <li className="websites-list-card">

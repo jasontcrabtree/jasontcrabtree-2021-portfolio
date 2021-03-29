@@ -79,10 +79,13 @@ function WorkListItem({ title, image, description, date, timeToRead, slug }) {
   );
 }
 
-function WorkListParent(props) {
+function CaseStudiesList() {
   const data = useStaticQuery(graphql`
-    query allMdxLinks {
-      allMdx(sort: { fields: frontmatter___date, order: DESC }) {
+    query allCaseStudies {
+      allMdx(
+        sort: { fields: frontmatter___date, order: DESC }
+        filter: { frontmatter: { type: { eq: "case-study" } } }
+      ) {
         nodes {
           slug
           timeToRead
@@ -97,11 +100,8 @@ function WorkListParent(props) {
     }
   `);
 
-  console.log(data, props);
-
   const workItems = data.allMdx.nodes;
 
-  console.log(workItems);
   return (
     <ul className="work-list-container">
       {workItems.map((item, i) => (
@@ -119,4 +119,4 @@ function WorkListParent(props) {
   );
 }
 
-export default WorkListParent;
+export default CaseStudiesList;

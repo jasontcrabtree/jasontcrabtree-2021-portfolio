@@ -20,6 +20,13 @@ module.exports = {
         path: `${__dirname}/src/case-studies/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/blog-posts/`,
+      },
+    },
     `gatsby-plugin-mdx`,
     `gatsby-plugin-netlify`, // keep last in plugins array
   ],

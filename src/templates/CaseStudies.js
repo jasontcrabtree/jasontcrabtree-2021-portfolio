@@ -5,6 +5,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 const CaseStudyTemplateStyles = styled.div`
   grid-column: 2 / 9;
+
   .work-post-parent--layout {
     grid-column: 2 / 9;
   }
