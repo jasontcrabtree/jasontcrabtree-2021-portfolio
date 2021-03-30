@@ -8,6 +8,29 @@ const BlogPostCardStyles = styled.li`
     margin: auto 0;
   }
 
+  background: var(--card-background-white);
+
+  box-shadow: var(--shadow-large);
+  border-radius: 8px;
+  padding: 0px;
+
+  &:hover {
+    box-shadow: var(--shadow-medium);
+  }
+
+  /* margin: 56px 0px;
+  padding: 40px 32px;
+  box-shadow: var(--shadow-medium);
+  border-radius: 8px;
+
+  .blog-list-item {
+    background: var(--white-100);
+  }
+
+  .blog-list-item > * > * + * {
+    margin: 8px 0;
+  } */
+
   .cover-image {
     /* Internal shadow */
     box-shadow: var(--shadow-extra-small);
@@ -63,7 +86,7 @@ const BlogPostCardStyles = styled.li`
 
 function BlogPostCard({
   title,
-  image,
+  // image,
   description,
   date,
   timeToRead,
@@ -88,7 +111,7 @@ function BlogPostCard({
   );
 }
 
-function BlogPostsList({ cardDescription }) {
+function BlogPostsList({ cardWithDescription, paginationLimit }) {
   const data = useStaticQuery(graphql`
     query allBlogPosts {
       allMdx(
@@ -113,15 +136,15 @@ function BlogPostsList({ cardDescription }) {
 
   return (
     <ul className="work-list-container">
-      {blogPostItem.slice(0, 3).map((item, i) => (
+      {blogPostItem.slice(0, paginationLimit).map((item, i) => (
         <BlogPostCard
           key={i}
           title={item.frontmatter.title}
           description={item.frontmatter.description}
           date={item.frontmatter.date}
           timeToRead={Math.round(item.timeToRead * 0.8)}
-          slug={`blog/${item.slug}`}
-          cardWithDescription={cardDescription}
+          slug={`/blog/${item.slug}`}
+          cardWithDescription={cardWithDescription}
         />
       ))}
     </ul>

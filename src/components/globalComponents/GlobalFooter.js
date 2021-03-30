@@ -37,18 +37,18 @@ const FooterStyles = styled.footer`
       line-height: 1.5;
     }
 
-    section > .footer-nav-list {
+    section > .footer-list {
       display: flex;
       text-align: left;
       flex-direction: column;
     }
 
-    .footer-nav-list > li {
+    .footer-list > li {
       margin-top: var(--size-8);
       /* margin-top: 100px; */
     }
 
-    section > .footer-nav-list > * {
+    section > .footer-list > * {
       height: 40px;
     }
 
@@ -75,17 +75,17 @@ const FooterStyles = styled.footer`
       margin: 24px 0px;
     }
 
-    .footer-nav-list > * {
+    .footer-list > * {
       line-height: 2;
     }
 
-    * > .footer-nav-list {
+    * > .footer-list {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
     }
 
-    * > .footer-nav-list > * {
+    * > .footer-list > * {
       margin-right: 24px;
     }
 
@@ -113,13 +113,15 @@ function GlobalFooter() {
         <p>
           Made with care in <strong>Auckland, New Zealand.</strong>
         </p>
-        <p>My little online spot to show my ongoing work, learning and play.</p>
         <p>
-          Built using the wonderful <a href="https://gridsome.org/">Gridsome</a>
-          , <a href="https://www.netlify.com/">Netlify</a>,{' '}
+          An online spot to try new things, talk about what I'm learning, and
+          generally share!
+        </p>
+        <p>
+          Built using the <a href="https://www.gatsbyjs.com/">Gatsby JS</a>,{' '}
+          <a href="https://www.netlify.com/">Netlify</a>,{' '}
           <a href="https://github.com/jasontcrabtree">Github</a>, and{' '}
-          <a href="https://buttondown.email/">Buttondown.</a> A big thanks for
-          those great services.
+          <a href="https://buttondown.email/">Buttondown.</a>
         </p>
         <p>
           <small>
@@ -136,7 +138,7 @@ function GlobalFooter() {
       </section>
       <section>
         <h3>Explore</h3>
-        <nav className="footer-nav-list">
+        <nav aria-label="footer-nav" className="footer-list">
           <Link to="/">Home</Link>
           <Link to="/contact/">Contact</Link>
           <Link to="/">Résumé</Link>

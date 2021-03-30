@@ -30,6 +30,11 @@ const WebsiteProjectsStyles = styled.ul`
     /* margin: auto 0; */
   }
 
+  .code-source {
+    font-weight: 600;
+    color: var(--primary-blue) !important;
+  }
+
   .websites-list-card:hover {
     box-shadow: var(--shadow-medium);
     --cover-rotation: 8deg;
@@ -85,6 +90,12 @@ function WebsiteProjects() {
           <ScaffoldSVG className="cover-illustration" />
           <h2 className="card-title">UseScaffold</h2>
           Eleventy Digital eComm Website
+        </a>{' '}
+        <a
+          className="code-source"
+          href="https://github.com/jasontcrabtree/usescaffold"
+        >
+          Code Source
         </a>
       </li>
       <li className="websites-list-card">
@@ -92,6 +103,12 @@ function WebsiteProjects() {
           <SapwoodSVG className="cover-illustration" />
           <h2 className="card-title">Sapwood Demo</h2>
           Demo Website: GatsbyJS & Prismic
+        </a>{' '}
+        <a
+          className="code-source"
+          href="https://github.com/jasontcrabtree/sapwood-example-website"
+        >
+          Code Source
         </a>
       </li>
       <li className="websites-list-card">
@@ -100,12 +117,24 @@ function WebsiteProjects() {
           <h2 className="card-title">Sales-Email App</h2>
           NextJS App: Cold-Email Starters
         </a>
+        <a
+          className="code-source"
+          href="https://github.com/jasontcrabtree/sales-emails"
+        >
+          Code Source
+        </a>
       </li>
       <li className="websites-list-card">
         <a href="https://charactercounter.netlify.app/">
           <CharacterCounterSVG className="cover-illustration" />
-          <h2 className="card-title">CharacterCounter</h2>
+          <h2 className="card-title">Character Counter</h2>
           Micro Website: Counts Characters
+        </a>
+        <a
+          className="code-source"
+          href="https://github.com/jasontcrabtree/CharacterCounter"
+        >
+          Code Source
         </a>
       </li>
       <li className="websites-list-card">
@@ -113,14 +142,14 @@ function WebsiteProjects() {
           <CSSPosterSVG className="cover-illustration" />
           <h2 className="card-title">CSS Poster Layout</h2>
           CodePen Public Link
-        </a>
+        </a>{' '}
       </li>
       <li className="websites-list-card">
         <a href="https://zoelenziesmith.com">
           <ZoeSVG className="cover-illustration" />
           <h2 className="card-title">Zoe LS Portfolio</h2>
           Website: ZoeLenzieSmith.com
-        </a>
+        </a>{' '}
       </li>
     </WebsiteProjectsStyles>
   );

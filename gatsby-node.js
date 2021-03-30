@@ -1,5 +1,3 @@
-const { createFilePath } = require('gatsby-source-filesystem');
-
 const graphQLWrapper = (promise) =>
   promise.then((pages) => {
     if (pages.errors) throw pages.errors;
@@ -71,7 +69,6 @@ async function createRepeatableBlogPosts({ graphql, actions, reporter }) {
   // Create pages for each Page in Prismic using the selected template.
   blogPostsPages.data.allMdx.nodes.forEach((node) => {
     if (node.frontmatter.type !== 'case-study') {
-      console.log(node);
       actions.createPage({
         path: `/blog/${node.slug}`,
         component: blogPostsTemplate,

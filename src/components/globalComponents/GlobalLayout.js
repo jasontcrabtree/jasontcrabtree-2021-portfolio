@@ -42,6 +42,11 @@ const GlobalLayoutStyles = styled.div`
     text-decoration: none;
   }
 
+  aside {
+    grid-column: 1 / 5;
+    height: fit-content;
+  }
+
   @media screen and (min-width: 960px) {
     .return-home-link {
       grid-column: 1 / 8;
@@ -64,7 +69,7 @@ const GlobalLayoutStyles = styled.div`
 
     main {
       grid-row-start: 2;
-      grid-column: 1 / -1;
+      /* grid-column: 1 / -1; */
     }
 
     grid-row-start: 2;
@@ -74,13 +79,24 @@ const GlobalLayoutStyles = styled.div`
   @media screen and (max-width: 960px) {
     margin: auto 32px;
     display: grid;
+    flex-direction: column;
     padding: 16px;
     max-width: fit-content;
     max-width: -moz-max-content; /* Firefox/Gecko */
     max-width: -webkit-max-content; /* Chrome */
+    /* max-width: 40rem; */
     width: auto;
 
-    padding-top: 32px;
+    padding-top: 48px;
+
+    header {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    aside {
+      grid-column: 1;
+      grid-row: 1;
+    }
   }
 
   @media screen and (max-width: 459px) {
@@ -117,11 +133,13 @@ const GlobalLayout = (props) => {
     <GlobalLayoutStyles className="top-parent-container">
       <SEO image={image} title={title} location={location.pathname} />
       {/* <SkipLink /> */}
-      <Link className="return-home-link" to="/">
-        <h2 className="return-home-h2--color return-home-h2--type">
-          Jason Crabtree
-        </h2>
-      </Link>
+      <aside>
+        <Link className="return-home-link" to="/">
+          <h2 className="return-home-h2--color return-home-h2--type">
+            Jason Crabtree
+          </h2>
+        </Link>
+      </aside>
       <GlobalNav />
       <>{children}</>
       <BgColumn />

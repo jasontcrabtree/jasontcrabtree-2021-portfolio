@@ -109,9 +109,14 @@ const GlobalNav = () => (
       </svg>
     </div>
     <nav className="nav-list">
-      <Link to="/#main">Home</Link>
+      <Link to="/#code">Home</Link>
       <Link to="/contact">Contact</Link>
-      <a href="/jason-crabtree-cv-mar-2021.pdf">Résumé</a>
+      <a
+        href="/jason-crabtree-cv-mar-2021.pdf"
+        aria-label="navigates to CV PDF"
+      >
+        Résumé
+      </a>
       <Link className="nav-hidden" to="/#work">
         Work
       </Link>
