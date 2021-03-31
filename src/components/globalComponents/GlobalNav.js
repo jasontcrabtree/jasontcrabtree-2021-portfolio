@@ -109,7 +109,7 @@ const GlobalNav = () => (
       </svg>
     </div>
     <nav className="nav-list">
-      <Link to="/#code">Home</Link>
+      <Link to="/#hero">Home</Link>
       <Link to="/contact">Contact</Link>
       <a
         href="/jason-crabtree-cv-mar-2021.pdf"
@@ -117,7 +117,7 @@ const GlobalNav = () => (
       >
         Résumé
       </a>
-      <Link className="nav-hidden" to="/#work">
+      <Link className="nav-hidden" to="/#code">
         Work
       </Link>
       <Link to="/blog">Blog</Link>

@@ -157,10 +157,10 @@ function DribbbleGallery() {
             src="/assets/images/dribbble-shots/app-platform-website.png"
             alt="A concept website showcasing different professional software tools and how they can fit and work together."
           />
-          <figcaption class="figcaption--layout">
+          <figcaption className="figcaption--layout">
             <span>
               App Stores & Platforms List concept
-              <span class="date--style">March 2020</span>
+              <span className="date--style">March 2020</span>
             </span>
             <br />
             <a
@@ -194,10 +194,10 @@ function DribbbleGallery() {
             src="/assets/images/dribbble-shots/chris-vector.png"
             alt="A vector illustration of my good friend Chris riding a bike with his feet up on the handlebars"
           />
-          <figcaption class="figcaption--layout">
+          <figcaption className="figcaption--layout">
             <span>
               Vector Illustration: Chris rides into the Sunset
-              <span class="date--style">Oct 2019</span>
+              <span className="date--style">Oct 2019</span>
             </span>
             <br />
             <a

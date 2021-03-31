@@ -140,12 +140,12 @@ function GlobalFooter() {
         <h3>Explore</h3>
         <nav aria-label="footer-nav" className="footer-list">
           <Link to="/">Home</Link>
-          <Link to="/contact/">Contact</Link>
+          <Link to="/contact">Contact</Link>
           <Link to="/">Résumé</Link>
-          <Link className="nav-hidden" to="/#work">
+          <Link className="nav-hidden" to="/#code">
             Work
           </Link>
-          <Link to="/blog/">Blog</Link>
+          <Link to="/blog">Blog</Link>
         </nav>
       </section>
       <section className="footer-subscribe--layout">

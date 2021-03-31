@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import WebsiteProjects from '../components/staticComponents/WebsiteProjects';
 import CaseStudiesList from '../components/staticComponents/CaseStudiesList';
 
@@ -16,7 +15,7 @@ const Index = (props) => {
   return (
     <IndexPageStyles id="main" className="main-parent">
       <SEO />
-      <section className="hero-container">
+      <section className="hero-container" id="hero">
         <div className="hero-header-parent">
           <h1 className="hero-header-h1--style hero-header-h1--layout">
             Front-End Developer and Designer Freelancing in Auckland, New
@@ -30,7 +29,7 @@ const Index = (props) => {
         <div className="hero-children-container">
           <SocialProfiles />
           <div className="hero-bio--layout">
-            <p className=" large-paragraph-text">
+            <p className="large-paragraph-text">
               Hello, I’m Jason. I'm a Front-End Developer and Designer focused
               on websites and design-systems.
             </p>

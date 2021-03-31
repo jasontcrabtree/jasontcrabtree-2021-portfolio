@@ -5,12 +5,6 @@ description: 'Deconstructing the Slack brand voice to excel in a job interview e
 # image: 'https://res.cloudinary.com/jasontcrabtree/image/upload/c_scale,q_auto,w_830/v1573420658/Portfolio-Assets/Slack-Cover-Image.png'
 ---
 
-<!-- import CaseStudyReadTime from "@/components/utils/CaseStudyReadTime"; -->
-import BlogReadTime from "@/components/utils/BlogReadTime";
-
-<!-- <CaseStudyReadTime readTime="9"/> -->
-<BlogReadTime readTime="9"/>
-
 import ImgLarge from '@/components/Images/ImgLarge'
 
 ![A word cloud of some of Slack's top words; troubles, investigate, writing, roadmap, icons, feedback, patience, email, code, emoji, great](~/assets/images/brand-voice/slack-wordcloud.png)

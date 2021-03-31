@@ -4,11 +4,6 @@ description: “Learning Design over the wire, a Pathway to Learning Design via 
 title: My Pathway into Design
 ---
 
-import BlogReadTime from "@/components/utils/BlogReadTime";
+My pathway into design started through User Experience. I first learnt about design from afar (literally, I was in New Zealand, following people in Silicon Valley on Twitter), learning how things were done through Podcasts and Blog Posts and Books and Conference talks, from UX Designers.
 
-<BlogReadTime readTime="2:45"/>
-
-My pathway into design started through User Experience. I first learnt about design from afar (literally, I was in New Zealand, following people in Silicon Valley on Twitter), learning how things were done through Podcasts and Blog Posts and Books and Conference talks, from UX Designers. 
-
-Those lessons focused on user research, defining problems, understanding users, journey maps, user flows, personas, information hierarchy, flow charts and post-it notes. Methods and design techniques focused on the discovery and development of new product concepts and pencil drawn, rough mockups. 
-
+Those lessons focused on user research, defining problems, understanding users, journey maps, user flows, personas, information hierarchy, flow charts and post-it notes. Methods and design techniques focused on the discovery and development of new product concepts and pencil drawn, rough mockups.
