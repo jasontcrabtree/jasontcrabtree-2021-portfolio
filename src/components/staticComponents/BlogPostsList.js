@@ -86,7 +86,6 @@ const BlogPostCardStyles = styled.li`
 
 function BlogPostCard({
   title,
-  // image,
   description,
   date,
   timeToRead,
@@ -96,7 +95,6 @@ function BlogPostCard({
   return (
     <BlogPostCardStyles className="work-list-card">
       <Link to={slug} className="read">
-        {/* <img src={image} alt={title} className="cover-image" /> */}
         <div className="card-details">
           <p className="date--style">Published: {date}</p>
           <h2 className="card-title">{title}</h2>

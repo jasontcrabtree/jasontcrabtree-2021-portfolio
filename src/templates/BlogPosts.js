@@ -10,6 +10,10 @@ const BlogPostTemplateStyles = styled.div`
     font-weight: 400;
   }
 
+  aside {
+    margin: 1.5rem 0px;
+  }
+
   h1 {
     font-family: 'p22-mackinac-pro', Georgia, serif;
     font-weight: 800;
@@ -92,9 +96,9 @@ function BlogPosts({ data: { mdx } }) {
           <h1 className="blog-post-title--style">{mdx.frontmatter.title}</h1>
         </div>
         <aside>
-          <p className="date-style">
+          <span className="date-style">
             {mdx.frontmatter.date} | {mdx.timeToRead} min read time
-          </p>
+          </span>
         </aside>
         <article className="post-container">
           <MDXRenderer>{mdx.body}</MDXRenderer>

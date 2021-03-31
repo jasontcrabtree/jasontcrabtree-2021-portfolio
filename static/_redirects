@@ -1,0 +1,10 @@
+# Redirects from what the browser requests to what we serve
+/#portfolio               /
+
+/#contact                 /contact
+
+/design-studies           /
+
+/brand-voice              /slack-brand-voice
+
+https://blog.jasontcrabtree.com/       /blog

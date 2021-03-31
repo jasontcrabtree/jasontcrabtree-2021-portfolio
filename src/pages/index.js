@@ -66,7 +66,6 @@ const Index = (props) => {
 
       <section className="latest-posts-container">
         <h2 className="h2-section-title">Latest Blog Posts</h2>
-        {/* <ul className="posts index-blog-list-title--style" /> */}
         <BlogPostsList className="work-list-container" paginationLimit="3" />
       </section>
 

@@ -1,0 +1,12 @@
+/assets/*
+Expires: Tue Mar 24 2022 09:55:02 GMT+0100 (Central European Standard Time)
+
+# Headers for that path:
+Cache-Control: public, max-age=360000
+
+/_templates/index.html
+   X-Frame-Options: DENY
+   X-XSS-Protection: 1; mode=block
+
+/_templates/index2.html
+   X-Frame-Options: SAMEORIGIN

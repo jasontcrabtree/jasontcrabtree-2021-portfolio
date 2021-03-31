@@ -64,9 +64,13 @@ function DribbbleGallery() {
         <li>
           <figure>
             <img
-              src="/assets/images/dribbble-shots/daily-ui-day-21.png"
+              loading="lazy"
+              width={450}
+              height={365}
+              src="../../assets/images/dribbble-shots/daily-ui-day-21.png"
               alt="A concept website showcasing different professional software tools and how they can fit and work together."
             />
+
             <figcaption className="figcaption--layout">
               <span>
                 Daily UI #21: Smart Home Dashboard
@@ -82,7 +86,10 @@ function DribbbleGallery() {
         <li>
           <figure>
             <img
-              src="/assets/images/dribbble-shots/daily-ui-day-17.png"
+              loading="lazy"
+              width={450}
+              height={365}
+              src="../../assets/images/dribbble-shots/daily-ui-day-17.png"
               alt="A concept website showcasing different professional software tools and how they can fit and work together."
             />
             <figcaption className="figcaption--layout">
@@ -100,7 +107,10 @@ function DribbbleGallery() {
         <li>
           <figure>
             <img
-              src="/assets/images/dribbble-shots/daily-ui-day-12.png"
+              loading="lazy"
+              width={450}
+              height={365}
+              src="../../assets/images/dribbble-shots/daily-ui-day-12.png"
               alt="A concept website showcasing different professional software tools and how they can fit and work together."
             />
             <figcaption className="figcaption--layout">
@@ -118,7 +128,10 @@ function DribbbleGallery() {
         <li>
           <figure>
             <img
-              src="/assets/images/dribbble-shots/daily-ui-day-07.png"
+              loading="lazy"
+              width={450}
+              height={365}
+              src="../../assets/images/dribbble-shots/daily-ui-day-07.png"
               alt="A concept website showcasing different professional software tools and how they can fit and work together."
             />
             <figcaption className="figcaption--layout">
@@ -136,7 +149,10 @@ function DribbbleGallery() {
         <li>
           <figure>
             <img
-              src="/assets/images/dribbble-shots/daily-ui-day-03.png"
+              loading="lazy"
+              width={450}
+              height={365}
+              src="../../assets/images/dribbble-shots/daily-ui-day-03.png"
               alt="A concept website showcasing different professional software tools and how they can fit and work together."
             />
             <figcaption className="figcaption--layout">
@@ -172,7 +188,10 @@ function DribbbleGallery() {
         <li>
           <figure>
             <img
-              src="/assets/images/dribbble-shots/open-med.png"
+              loading="lazy"
+              width={450}
+              height={365}
+              src="../../assets/images/dribbble-shots/open-med.png"
               alt="Two mobile screens showing the 'Home' and 'Calendar' views for a concept medical appointment app"
             />
             <figcaption className="figcaption--layout">

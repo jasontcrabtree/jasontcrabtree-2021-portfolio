@@ -38,7 +38,7 @@ export default function SEO({ title, description, location, image, imageALT }) {
       titleTemplate={`%s ${metaDataValues.titleTemplate}`}
     >
       <html lang="en" />
-      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+      <link rel="icon" type="image/svg+xml" href="/star.svg" />
 
       <meta property="og:title" content={title || metaDataValues.title} />
       <meta name="twitter:title" content={title || metaDataValues.title} />

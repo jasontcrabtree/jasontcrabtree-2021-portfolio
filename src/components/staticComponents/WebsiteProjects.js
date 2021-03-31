@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import ScaffoldSVG from '../../assets/svgs/coverIllustrations/ScaffoldSVG.svg';
-import SapwoodSVG from '../../assets/svgs/coverIllustrations/SapwoodSVG.svg';
-import SalesEmailsAppSVG from '../../assets/svgs/coverIllustrations/SalesEmailsAppSVG.svg';
-import CharacterCounterSVG from '../../assets/svgs/coverIllustrations/CharacterCounterSVG.svg';
-import CSSPosterSVG from '../../assets/svgs/coverIllustrations/CSSPosterSVG.svg';
-import ZoeSVG from '../../assets/svgs/coverIllustrations/ZoeSVG.svg';
+import ScaffoldSVG from '../../../static/assets/svgs/coverIllustrations/ScaffoldSVG.svg';
+import SapwoodSVG from '../../../static/assets/svgs/coverIllustrations/SapwoodSVG.svg';
+import SalesEmailsAppSVG from '../../../static/assets/svgs/coverIllustrations/SalesEmailsAppSVG.svg';
+import CharacterCounterSVG from '../../../static/assets/svgs/coverIllustrations/CharacterCounterSVG.svg';
+import CSSPosterSVG from '../../../static/assets/svgs/coverIllustrations/CSSPosterSVG.svg';
+import ZoeSVG from '../../../static/assets/svgs/coverIllustrations/ZoeSVG.svg';
 
 const WebsiteProjectsStyles = styled.ul`
   --cover-rotation: -4deg;
@@ -87,7 +87,12 @@ function WebsiteProjects() {
     <WebsiteProjectsStyles className="work-list-container">
       <li className="websites-list-card">
         <a href="https://usescaffold.com/">
-          <ScaffoldSVG className="cover-illustration" />
+          <ScaffoldSVG
+            loading="lazy"
+            width={100}
+            height={100}
+            className="cover-illustration"
+          />
           <h2 className="card-title">UseScaffold</h2>
           Eleventy Digital eComm Website
         </a>{' '}
@@ -100,7 +105,12 @@ function WebsiteProjects() {
       </li>
       <li className="websites-list-card">
         <a href="https://sapwood.netlify.app/">
-          <SapwoodSVG className="cover-illustration" />
+          <SapwoodSVG
+            loading="lazy"
+            width={100}
+            height={100}
+            className="cover-illustration"
+          />
           <h2 className="card-title">Sapwood Demo</h2>
           Demo Website: GatsbyJS & Prismic
         </a>{' '}
@@ -113,7 +123,12 @@ function WebsiteProjects() {
       </li>
       <li className="websites-list-card">
         <a href="https://sales-emails.netlify.app/">
-          <SalesEmailsAppSVG className="cover-illustration" />
+          <SalesEmailsAppSVG
+            loading="lazy"
+            width={100}
+            height={100}
+            className="cover-illustration"
+          />
           <h2 className="card-title">Sales-Email App</h2>
           NextJS App: Cold-Email Starters
         </a>
@@ -126,7 +141,12 @@ function WebsiteProjects() {
       </li>
       <li className="websites-list-card">
         <a href="https://charactercounter.netlify.app/">
-          <CharacterCounterSVG className="cover-illustration" />
+          <CharacterCounterSVG
+            loading="lazy"
+            width={100}
+            height={100}
+            className="cover-illustration"
+          />
           <h2 className="card-title">Character Counter</h2>
           Micro Website: Counts Characters
         </a>
@@ -139,14 +159,24 @@ function WebsiteProjects() {
       </li>
       <li className="websites-list-card">
         <a href="https://codepen.io/jasontcrabtree/pen/qBbQXJP">
-          <CSSPosterSVG className="cover-illustration" />
+          <CSSPosterSVG
+            loading="lazy"
+            width={100}
+            height={100}
+            className="cover-illustration"
+          />
           <h2 className="card-title">CSS Poster Layout</h2>
           CodePen Public Link
         </a>{' '}
       </li>
       <li className="websites-list-card">
         <a href="https://zoelenziesmith.com">
-          <ZoeSVG className="cover-illustration" />
+          <ZoeSVG
+            loading="lazy"
+            width={100}
+            height={100}
+            className="cover-illustration"
+          />
           <h2 className="card-title">Zoe LS Portfolio</h2>
           Website: ZoeLenzieSmith.com
         </a>{' '}

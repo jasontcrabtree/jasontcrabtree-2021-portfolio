@@ -65,11 +65,17 @@ function WorkListItem({ title, image, description, date, timeToRead, slug }) {
   return (
     <WorkListItemStyles className="work-list-card">
       <Link to={slug} className="read">
-        <img src={image} alt={title} className="cover-image" />
+        <img
+          loading="lazy"
+          width="360"
+          height="180"
+          src={image}
+          alt={title}
+          className="cover-image"
+        />
         <div className="card-details">
           <h2 className="card-title">{title}</h2>
           <span className="date--style">Project Date: {date}</span>
-          {/* <p className="date">{date}</p> */}
           <p className="description">{description}</p>
           <span>{timeToRead} min read</span> •{' '}
           <span className="card-link">View case study</span>
