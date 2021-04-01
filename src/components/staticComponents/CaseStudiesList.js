@@ -1,6 +1,7 @@
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
+import LazyLoad from 'react-lazyload';
 
 const WorkListItemStyles = styled.li`
   .card-details {
@@ -22,7 +23,7 @@ const WorkListItemStyles = styled.li`
     margin-bottom: var(--size-16);
   }
 
-  *:last-child {
+  .card-details {
     padding-bottom: 32px;
   }
 
@@ -65,14 +66,9 @@ function WorkListItem({ title, image, description, date, timeToRead, slug }) {
   return (
     <WorkListItemStyles className="work-list-card">
       <Link to={slug} className="read">
-        <img
-          loading="lazy"
-          width="360"
-          height="180"
-          src={image}
-          alt={title}
-          className="cover-image"
-        />
+        <LazyLoad height={300}>
+          <img src={image} alt={title} className="cover-image" />
+        </LazyLoad>
         <div className="card-details">
           <h2 className="card-title">{title}</h2>
           <span className="date--style">Project Date: {date}</span>
@@ -107,6 +103,8 @@ function CaseStudiesList() {
   `);
 
   const workItems = data.allMdx.nodes;
+
+  console.log(workItems);
 
   return (
     <ul className="work-list-container">
