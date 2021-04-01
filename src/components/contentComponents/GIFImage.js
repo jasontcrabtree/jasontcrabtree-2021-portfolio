@@ -1,7 +1,8 @@
 import React from 'react';
+import CustomLazyImage from '../utils/CustomLazyImage';
 
 function GIFImage({ gifSrc, gifAlt }) {
-  return <img src={gifSrc} alt={gifAlt} />;
+  return <CustomLazyImage src={gifSrc} alt={gifAlt} />;
 }
 
 export default GIFImage;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import CustomLazyImage from '../utils/CustomLazyImage';
 
 const ImgLargeStyles = styled.figure`
   figcaption {
@@ -15,7 +16,7 @@ const ImgLargeStyles = styled.figure`
 function ImgLarge({ imgSrc, imgAlt, caption }) {
   return (
     <ImgLargeStyles>
-      <img src={imgSrc} alt={imgAlt} />
+      <CustomLazyImage src={imgSrc} alt={imgAlt} />
       <figcaption>{caption}</figcaption>
     </ImgLargeStyles>
   );

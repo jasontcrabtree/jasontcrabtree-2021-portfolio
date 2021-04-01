@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import CustomLazyImage from '../utils/CustomLazyImage';
 
 const ImgSplitStyles = styled.section`
   figcaption {
@@ -43,11 +44,11 @@ function ImgSplit({
   return (
     <ImgSplitStyles>
       <figure>
-        <img src={imgSrcLeft} alt={imgAltLeft} />
+        <CustomLazyImage src={imgSrcLeft} alt={imgAltLeft} />
         <figcaption>{captionLeft}</figcaption>
       </figure>
       <figure>
-        <img src={imgSrcRight} alt={imgAltRight} />
+        <CustomLazyImage src={imgSrcRight} alt={imgAltRight} />
         <figcaption>{captionRight}</figcaption>
       </figure>
     </ImgSplitStyles>

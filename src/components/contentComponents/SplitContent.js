@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import CustomLazyImage from '../utils/CustomLazyImage';
 
 const SplitContentStyles = styled.section`
   @media screen and (min-width: 960px) {
@@ -43,14 +44,14 @@ function SplitContent({
       {left && (
         <article>
           {leftTitle && <h3>{leftTitle}</h3>}
-          {leftImage && <img src={leftImage} alt={leftAlt} />}
+          {leftImage && <CustomLazyImage src={leftImage} alt={leftAlt} />}
           {leftCaption && <p>{leftCaption}</p>}
         </article>
       )}
       {right && (
         <article>
           {rightTitle && <h3>{rightTitle}</h3>}
-          {rightImage && <img src={rightImage} alt={rightAlt} />}
+          {rightImage && <CustomLazyImage src={rightImage} alt={rightAlt} />}
           {rightCaption && <p>{rightCaption}</p>}
         </article>
       )}

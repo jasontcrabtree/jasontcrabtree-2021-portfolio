@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import CustomLazyImage from '../utils/CustomLazyImage';
 
 const ImgRightStyles = styled.figure`
   figcaption {
@@ -19,7 +20,7 @@ const ImgRightStyles = styled.figure`
 function ImgRight({ imgSrc, imgAlt, caption }) {
   return (
     <ImgRightStyles>
-      <img src={imgSrc} alt={imgAlt} />
+      <CustomLazyImage src={imgSrc} alt={imgAlt} />
       <figcaption>{caption}</figcaption>
     </ImgRightStyles>
   );

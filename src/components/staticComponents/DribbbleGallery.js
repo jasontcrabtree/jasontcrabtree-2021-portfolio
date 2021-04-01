@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import CustomLazyImage from '../utils/CustomLazyImage';
 
 const DribbbleGalleryStyles = styled.div`
   .dribbble-gallery--layout > * > figure {
@@ -18,6 +18,15 @@ const DribbbleGalleryStyles = styled.div`
 
   .dribbble-gallery--layout > * > figure > img {
     border: 1px solid var(--blue-white-100);
+  }
+
+  figure {
+    span {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
   }
 
   .fade-enter-active {
@@ -64,19 +73,10 @@ function DribbbleGallery() {
       <ul className="dribbble-gallery--layout">
         <li>
           <figure>
-            {/* <img
-              loading="lazy"
-              width={450}
-              height={365}
+            <CustomLazyImage
+              alt="A Smart home dashboard concept, indicating weather, upcoming events, home tech settings"
               src="../../assets/images/dribbble-shots/daily-ui-day-21.png"
-              alt="A concept website showcasing different professional software tools and how they can fit and work together."
-            /> */}
-            <LazyLoadImage
-              alt="Email Receipt Design, Desktop and Mobile."
               effect="blur"
-              width={440}
-              height={330}
-              src="../../assets/images/dribbble-shots/daily-ui-day-21.png"
             />
             <figcaption className="figcaption--layout">
               <span>
@@ -92,18 +92,9 @@ function DribbbleGallery() {
         </li>
         <li>
           <figure>
-            {/* <img
-              loading="lazy"
-              width={450}
-              height={365}
-              src="../../assets/images/dribbble-shots/daily-ui-day-17.png"
-              alt="A concept website showcasing different professional software tools and how they can fit and work together."
-            /> */}
-            <LazyLoadImage
+            <CustomLazyImage
               alt="Email Receipt Design, Desktop and Mobile."
               effect="blur"
-              width={440}
-              height={330}
               src="../../assets/images/dribbble-shots/daily-ui-day-17.png"
             />
             <figcaption className="figcaption--layout">
@@ -120,18 +111,9 @@ function DribbbleGallery() {
         </li>
         <li>
           <figure>
-            {/* <img
-              loading="lazy"
-              width={450}
-              height={365}
-              src="../../assets/images/dribbble-shots/daily-ui-day-12.png"
-              alt="A concept website showcasing different professional software tools and how they can fit and work together."
-            /> */}
-            <LazyLoadImage
+            <CustomLazyImage
               alt="Email Receipt Design, Desktop and Mobile."
               effect="blur"
-              width={440}
-              height={330}
               src="../../assets/images/dribbble-shots/daily-ui-day-12.png"
             />
             <figcaption className="figcaption--layout">
@@ -148,18 +130,9 @@ function DribbbleGallery() {
         </li>
         <li>
           <figure>
-            {/* <img
-              loading="lazy"
-              width={450}
-              height={365}
-              src="../../assets/images/dribbble-shots/daily-ui-day-07.png"
-              alt="A concept website showcasing different professional software tools and how they can fit and work together."
-            /> */}
-            <LazyLoadImage
+            <CustomLazyImage
               alt="Email Receipt Design, Desktop and Mobile."
               effect="blur"
-              width={440}
-              height={330}
               src="../../assets/images/dribbble-shots/daily-ui-day-07.png"
             />
             <figcaption className="figcaption--layout">
@@ -176,18 +149,9 @@ function DribbbleGallery() {
         </li>
         <li>
           <figure>
-            {/* <img
-              loading="lazy"
-              width={450}
-              height={365}
-              src="../../assets/images/dribbble-shots/daily-ui-day-03.png"
-              alt="A concept website showcasing different professional software tools and how they can fit and work together."
-            /> */}
-            <LazyLoadImage
+            <CustomLazyImage
               alt="Email Receipt Design, Desktop and Mobile."
               effect="blur"
-              width={440}
-              height={330}
               src="../../assets/images/dribbble-shots/daily-ui-day-03.png"
             />
             <figcaption className="figcaption--layout">
@@ -204,7 +168,7 @@ function DribbbleGallery() {
         </li>
         {/* <li>
         <figure>
-          <img
+          <CustomLazyImage
             src="/assets/images/dribbble-shots/app-platform-website.png"
             alt="A concept website showcasing different professional software tools and how they can fit and work together."
           />
@@ -222,18 +186,9 @@ function DribbbleGallery() {
       </li>  */}
         <li>
           <figure>
-            {/* <img
-              loading="lazy"
-              width={450}
-              height={365}
-              src="../../assets/images/dribbble-shots/open-med.png"
-              alt="Two mobile screens showing the 'Home' and 'Calendar' views for a concept medical appointment app"
-            /> */}
-            <LazyLoadImage
+            <CustomLazyImage
               alt="Email Receipt Design, Desktop and Mobile."
               effect="blur"
-              width={440}
-              height={330}
               src="../../assets/images/dribbble-shots/open-med.png"
             />
             <figcaption className="figcaption--layout">
@@ -251,7 +206,7 @@ function DribbbleGallery() {
         </li>
         {/* <li>
         <figure>
-          <img
+          <CustomLazyImage
             src="/assets/images/dribbble-shots/chris-vector.png"
             alt="A vector illustration of my good friend Chris riding a bike with his feet up on the handlebars"
           />

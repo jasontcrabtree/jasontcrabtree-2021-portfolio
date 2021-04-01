@@ -1,7 +1,7 @@
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
-import LazyLoad from 'react-lazyload';
+import CustomLazyImage from '../utils/CustomLazyImage';
 
 const WorkListItemStyles = styled.li`
   .card-details {
@@ -66,9 +66,7 @@ function WorkListItem({ title, image, description, date, timeToRead, slug }) {
   return (
     <WorkListItemStyles className="work-list-card">
       <Link to={slug} className="read">
-        <LazyLoad height={300}>
-          <img src={image} alt={title} className="cover-image" />
-        </LazyLoad>
+        <CustomLazyImage src={image} alt={title} className="cover-image" />
         <div className="card-details">
           <h2 className="card-title">{title}</h2>
           <span className="date--style">Project Date: {date}</span>

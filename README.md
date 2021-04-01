@@ -24,4 +24,5 @@ Focuses:
 
 ## Todo
 
-- Build in theme management?
+- Build in nightmode theme management?
+- Improve asset storage consistency, currently SVG's are in static, images are in src
