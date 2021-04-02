@@ -69,8 +69,7 @@ const ContactPageStyles = styled.main`
   }
 `;
 
-function ContactPage(props) {
-  console.log(props);
+function ContactPage() {
   return (
     <ContactPageStyles>
       <header className="contact-header">

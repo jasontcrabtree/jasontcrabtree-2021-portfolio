@@ -42,8 +42,7 @@ const BlogPageStyles = styled.main`
   }
 `;
 
-function BlogPage(props) {
-  console.log(props);
+function BlogPage() {
   return (
     <BlogPageStyles>
       <header>

@@ -6,6 +6,7 @@ image: 'https://res.cloudinary.com/jasontcrabtree/image/upload/v1573418454/Portf
 type: case-study
 ---
 
+import CustomLazyImage from '../components/utils/CustomLazyImage.js'
 import GIFImage from '../components/contentComponents/GIFImage.js'
 
 
@@ -47,6 +48,10 @@ Character Counter gives a quick and focused solution to this problem.
 
 ### The ideal use-case (to complete in just a few seconds)
 
+<CustomLazyImage
+alt=""
+src=""
+/>
 ![The Ideal Use-Case. 1. Realise Product Need, 2. Quickly Use Product, 3. Get back to Original Task!](/assets/images/charactercounter/cc-use-case-flow.png)
 
 1. Load a new tab or page (or navigate to an existing tab!)
@@ -66,14 +71,26 @@ As a project primarily built to scratch a personal itch — the research for thi
 
 I started by exploring existing options. Surely I reasoned, a solution already existed. And, some did! But nothing quite fit.
 
+<CustomLazyImage
+alt=""
+src=""
+/>
 ![Image of Right-Click Services AppleScript Function to Count Word and Characters](/assets/images/charactercounter/apple-script-counter.png)
 
 1. The first solution I found was an [AppleScript hosted on GitHub](https://gist.github.com/mechanomi/1616556). This created a system-wide function that enabled you to select the text, right-click and then be told the number of words and characters present. After some testing, I discovered that the script didn’t work in Figma (my main design tool — and one of the common use-case) and that drag selecting text, right-clicking and using the script itself was **_clunky and awkward_**.
 
+<CustomLazyImage
+alt=""
+src=""
+/>
 ![Tweet requesting a macOS MenuBar Character Counting App](/assets/images/charactercounter/tweet-productrequest.png)
 
 2. After discounting the AppleScript solution, I explored the possibility of a macOS Menu Bar App. When Google failed to produce results I turned to Twitter. Unfortunately, the lone heart proves my request for a new product didn’t go as viral as I might have hoped!
 
+<CustomLazyImage
+alt=""
+src=""
+/>
 ![A hacky solution to my character counting goals — heavily taken from w3schools](/assets/images/charactercounter/js-character-counter.png)
 
 > Eventually, I hacked together a solution. Perfect! Ship it. (I’m sure this is awful code, but I’m so proud it works!)
@@ -86,6 +103,10 @@ The first version worked, in the sense that you could type text and it would loa
 
 After a few weeks testing this out I realised the improvements I could achieve with a system font stack (using default computer system-level fonts) and strong visual hierarchy. This led to Version 2.0.
 
+<CustomLazyImage
+alt=""
+src=""
+/>
 ![The first version of CharacterCounter. Functional, but not pretty.](/assets/images/charactercounter/character-counter-v1.png)
 
 Plus, the first version also completely broke on mobile screens and narrow browser windows. Not ideal.
@@ -96,6 +117,10 @@ After a few weeks using the original, hastily designed Version 1.0, it was time 
 
 The new design incorporates a copy button to improve usability, letting text be quickly copied and carried away for use.
 
+<CustomLazyImage
+alt=""
+src=""
+/>
 ![Different Iterations of Formatting/Layout and the Final Layout used to plan the HTML File](/assets/images/charactercounter/redlining-and-sections.png)
 
 ## Presenting the Product: Final Polish
@@ -106,6 +131,10 @@ The page loads quickly and easily, a perfect addition to my workflow for writing
 
 Hopefully, it’ll be helpful for others too 💯🥳
 
+<CustomLazyImage
+alt=""
+src=""
+/>
 ![The Finished Product. The final image of Character Counter on Desktop and Mobile](/assets/images/charactercounter/cc-responsive-views.png)
 
 I’ve even managed to include a small animation. The button interaction confirms the textbox content has been successfully copied.
@@ -130,6 +159,10 @@ The speed results are the main outcomes I’m interested in. I aimed to build a 
 
 I can load a new tab (**⌘ + T** on Mac, **Ctrl + T** on Windows + Linux), type or paste in whatever I’m working on and get back to my original task within a few seconds — consistently and every time. No more strange, delayed google doc loading freezes (for this particular task at least!)
 
+<CustomLazyImage
+alt=""
+src=""
+/>
 ![Pingdom Website Speed Test: Load time 452 ms](/assets/images/charactercounter/pingdom-speed-results.png)
 
 ## Lessons: Lessons Learnt
@@ -146,7 +179,7 @@ _PS._ After publishing this I spoke with [Kostya Gorskiy](https://twitter.com/k0
 
 The main feedback focused on simplifying typography. As a result, we’ve gone from 8 different slight colour/boldness/size variations (it sounds like so many said like that!) to 4 different variations. These changes have been updated in the images so you get to see the final outcome! Enjoy.
 
----
+<hr/>
 
 ## Wrapping Up
 

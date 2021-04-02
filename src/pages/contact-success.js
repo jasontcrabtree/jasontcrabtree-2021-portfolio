@@ -65,8 +65,7 @@ const ContactSuccessStyles = styled.main`
   }
 `;
 
-function ContactSuccess(props) {
-  console.log(props);
+function ContactSuccess() {
   return (
     <ContactSuccessStyles>
       <header className="contact-header">

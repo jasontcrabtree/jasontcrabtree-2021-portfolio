@@ -8,9 +8,9 @@ import React from 'react';
 function CustomLazyImage({ alt, src, effect, height, width, placeholder }) {
   return (
     <LazyLoadImage
+      src={src}
       alt={alt}
       effect={effect || 'blur'}
-      src={src}
       height={height}
       width={width}
       placeholder={placeholder}

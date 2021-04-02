@@ -62,7 +62,6 @@ export const caseStudiesQuery = graphql`
 `;
 
 function CaseStudies({ data: { mdx } }) {
-  console.log(mdx, 'hello');
   return (
     <CaseStudyTemplateStyles>
       <main className="work-post-parent--layout">

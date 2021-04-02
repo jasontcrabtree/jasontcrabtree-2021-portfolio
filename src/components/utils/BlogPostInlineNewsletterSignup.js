@@ -12,8 +12,7 @@ const BlogPostInlineNewsletterSignupStyles = styled.main`
   }
 `;
 
-function BlogPostInlineNewsletterSignup(props) {
-  console.log(props);
+function BlogPostInlineNewsletterSignup() {
   return (
     <BlogPostInlineNewsletterSignupStyles>
       <h3>Enjoying the post?</h3>

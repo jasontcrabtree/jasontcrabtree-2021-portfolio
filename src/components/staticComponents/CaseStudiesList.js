@@ -102,8 +102,6 @@ function CaseStudiesList() {
 
   const workItems = data.allMdx.nodes;
 
-  console.log(workItems);
-
   return (
     <ul className="work-list-container">
       {workItems.map((item, i) => (
