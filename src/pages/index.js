@@ -52,7 +52,7 @@ const Index = (props) => {
 
       <section className="work-list-container" id="code">
         <h2 className="work-title">Website Projects</h2>
-        {/* <WebsiteProjects className="work-list-container" /> */}
+        <WebsiteProjects className="work-list-container" />
       </section>
 
       <hr />

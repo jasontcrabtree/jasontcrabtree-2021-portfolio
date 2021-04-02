@@ -2,6 +2,8 @@ import { graphql, Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import { MDXProvider } from '@mdx-js/react';
+import CustomLazyImage from '../components/utils/CustomLazyImage.js';
 
 const CaseStudyTemplateStyles = styled.div`
   grid-column: 2 / 9;
@@ -61,6 +63,8 @@ export const caseStudiesQuery = graphql`
   }
 `;
 
+const shortcodes = { CustomLazyImage };
+
 function CaseStudies({ data: { mdx } }) {
   return (
     <CaseStudyTemplateStyles>
@@ -75,7 +79,9 @@ function CaseStudies({ data: { mdx } }) {
         </div>
 
         <article className="work-container">
-          <MDXRenderer>{mdx.body}</MDXRenderer>
+          <MDXProvider components={shortcodes}>
+            <MDXRenderer>{mdx.body}</MDXRenderer>
+          </MDXProvider>
         </article>
       </main>
     </CaseStudyTemplateStyles>

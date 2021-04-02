@@ -2,6 +2,8 @@ import { graphql, Link } from 'gatsby';
 import React from 'react';
 import styled from 'styled-components';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import { MDXProvider } from '@mdx-js/react';
+import CustomLazyImage from '../components/utils/CustomLazyImage.js';
 
 const BlogPostTemplateStyles = styled.div`
   .blog-post-type {
@@ -83,6 +85,8 @@ export const blogPostQuery = graphql`
   }
 `;
 
+const shortcodes = { CustomLazyImage };
+
 function BlogPosts({ data: { mdx } }) {
   return (
     <BlogPostTemplateStyles>
@@ -101,7 +105,9 @@ function BlogPosts({ data: { mdx } }) {
           </span>
         </aside>
         <article className="post-container">
-          <MDXRenderer>{mdx.body}</MDXRenderer>
+          <MDXProvider components={shortcodes}>
+            <MDXRenderer>{mdx.body}</MDXRenderer>
+          </MDXProvider>
         </article>
       </main>
     </BlogPostTemplateStyles>
