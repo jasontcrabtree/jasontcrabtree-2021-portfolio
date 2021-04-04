@@ -3,29 +3,6 @@ import styled from 'styled-components';
 import BlogPostsList from '../components/staticComponents/BlogPostsList';
 
 const BlogPageStyles = styled.main`
-  /* .pager-component--style {
-    display: flex;
-    justify-content: flex-start;
-    justify-content: center;
-    font-weight: 500;
-  }
-
-  .pager-component--style > * {
-    text-decoration: none;
-    padding: 4px 32px;
-    border-radius: 4px;
-    margin: 0px 16px;
-  }
-
-  .pager-component--style > .active {
-    background: #3d36b2;
-    color: white;
-  }
-
-  .pager-component--style > *:last-child {
-    margin-right: 0px;
-  } */
-
   grid-column: 2 / 9;
 
   header > * {
@@ -39,6 +16,11 @@ const BlogPageStyles = styled.main`
 
   li {
     margin-top: 48px;
+  }
+
+  @media screen and (max-width: 960px) {
+    grid-row-start: 2;
+    grid-column: 1;
   }
 `;
 

@@ -65,7 +65,7 @@ const GlobalLayoutStyles = styled.div`
     padding-left: 2rem;
     padding-right: 2rem;
     grid-template-columns: repeat(13, 1fr);
-    grid-template-columns: repeat(13, minmax(0px, 1fr));
+    /* grid-template-columns: repeat(13, minmax(0px, 1fr)); */
     grid-template-rows: 64px auto auto auto auto auto;
 
     main {
@@ -94,6 +94,7 @@ const GlobalLayoutStyles = styled.div`
       grid-column: 1;
       grid-row: 1;
     }
+
     aside {
       grid-column: 1;
       grid-row: 1;

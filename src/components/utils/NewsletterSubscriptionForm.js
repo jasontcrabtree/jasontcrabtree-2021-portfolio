@@ -29,6 +29,16 @@ const SubscribeStyles = styled.div`
     font-size: var(--size-16);
   }
 
+  @media screen and (max-width: 1060px) {
+    p,
+    li {
+      max-width: 48ch;
+    }
+    .subscribe-email-input {
+      max-width: 40ch;
+    }
+  }
+
   @media screen and (max-width: 460px) {
     .subscribe-email-input {
       width: 80vw;

@@ -62,6 +62,9 @@ const BlogPostTemplateStyles = styled.div`
     .blog-post-title--style {
       font-size: var(--size-32);
     }
+
+    grid-row-start: 2;
+    grid-column: 1;
   }
 
   @media screen and (min-width: 920px) {

@@ -69,6 +69,12 @@ const IndexPageStyles = styled.main`
   .work-list-container {
     grid-column: 1 / -1;
     margin: auto 0px;
+
+    li {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 28rem;
+    }
   }
 
   .work-list-container {
@@ -191,12 +197,8 @@ const IndexPageStyles = styled.main`
     }
 
     .hero-children-container {
-      align-items: center;
-    }
-
-    .hero-children-container {
       display: flex;
-      /* flex-direction: column-reverse; */
+      flex-direction: column-reverse;
     }
 
     .work-title {

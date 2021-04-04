@@ -71,6 +71,11 @@ const FooterStyles = styled.footer`
     display: flex;
     flex-direction: column-reverse;
 
+    p,
+    li {
+      max-width: 48ch;
+    }
+
     section {
       margin: 24px 0px;
     }

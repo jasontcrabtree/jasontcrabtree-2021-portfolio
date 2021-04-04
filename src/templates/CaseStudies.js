@@ -48,6 +48,9 @@ const CaseStudyTemplateStyles = styled.div`
     .work-title--style {
       font-size: var(--size-32);
     }
+
+    grid-row-start: 2;
+    grid-column: 1;
   }
 `;
 

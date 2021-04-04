@@ -13,6 +13,8 @@ const GlobalNavStyles = styled.header`
 
   margin-top: 24px;
 
+  height: fit-content;
+
   z-index: 1;
 
   div:first-of-type {
