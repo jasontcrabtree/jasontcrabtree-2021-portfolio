@@ -25,7 +25,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mdx',
     },
-    `gatsby-plugin-preact`,
+    // `gatsby-plugin-preact`,
     `gatsby-plugin-netlify`, // keep last in plugins array
   ],
 };

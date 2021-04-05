@@ -18,11 +18,13 @@
 
   --grey-300: #cbd0e4;
 
-  --white-opacity-80: hsla(0,0%,100%,0.8);
+  --white-opacity-80: hsla(0, 0%, 100%, 0.8);
 
   --card-background-white: #f8f9fa;
 
   --white-100: #ffffff;
+
+  --prefers-dark-mode-bg: hsl(209, 61%, 10%);
 
   --horiz-spacer: #e1dfe9;
   --horiz-spacer: #cbd0e4;
@@ -292,7 +294,7 @@ a:any-link {
 
 @media (prefers-color-scheme: dark) {
   html {
-    background-color: hsl(209, 61%, 10%);
+    background-color: var(--prefers-dark-mode-bg);
   }
   h1,
   h2,
