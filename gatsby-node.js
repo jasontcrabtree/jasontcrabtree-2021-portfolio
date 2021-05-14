@@ -80,6 +80,44 @@ async function createRepeatableBlogPosts({ graphql, actions, reporter }) {
   });
 }
 
+async function createRepeatableSnippetsPages({ graphql, actions, reporter }) {
+  const snippetsTemplate = require.resolve('./src/templates/Snippets.js');
+
+  // Query all pages we want to create and get IDS and template data
+  const snippetsPage = await graphQLWrapper(
+    graphql(`
+      {
+        allMdx {
+          nodes {
+            slug
+            id
+            frontmatter {
+              type
+            }
+          }
+        }
+      }
+    `)
+  );
+
+  if (snippetsPage.errors) {
+    reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query');
+  }
+
+  // Create pages for each Page in Prismic using the selected template.
+  snippetsPage.data.allMdx.nodes.forEach((node) => {
+    if (node.frontmatter.type !== 'case-study') {
+      actions.createPage({
+        path: `/snippets/${node.slug}`,
+        component: snippetsTemplate,
+        context: {
+          id: node.id,
+        },
+      });
+    }
+  });
+}
+
 // exports.onCreateNode = ({ node, actions, getNode }) => {
 //   const { createNodeField } = actions;
 //   if (node.internal.type === 'Mdx') {
@@ -98,5 +136,6 @@ exports.createPages = async (params) => {
     // async create pages with functions
     createRepeatableCaseStudies(params),
     createRepeatableBlogPosts(params),
+    createRepeatableSnippetsPages(params),
   ]);
 };

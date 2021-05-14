@@ -23,6 +23,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `snippets`,
+        path: `${__dirname}/src/snippets/`,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-mdx',
     },
     // `gatsby-plugin-preact`,
