@@ -14,7 +14,7 @@ function ColleagueQuotes() {
           <cite className="quote-name--style">Dini Paranagama</cite>
           <div className="quote-details-text--layout">
             <span>
-              Digital Product Manager at IAG Insurance, NZ,
+              Digital Product Manager at IAG Insurance, NZ,{' '}
               <a
                 href="https://www.linkedin.com/in/dini-paranagama"
                 aria-label="navigates to Dini Paranagama's CV, who gave the above quote"
@@ -46,7 +46,7 @@ function ColleagueQuotes() {
           <cite className="quote-name--style">Natalie van Baarlen</cite>
           <div className="quote-details-text--layout">
             <span>
-              Customer Experience Design Lead at IAG Insurance, NZ,
+              Customer Experience Design Lead at IAG Insurance, NZ,{' '}
               <a
                 href="https://www.linkedin.com/in/natalie-van-baarlen-60ab73107"
                 aria-label="navigates to Natalie Van Baarlen's LinkedIn, who gave the above quote"

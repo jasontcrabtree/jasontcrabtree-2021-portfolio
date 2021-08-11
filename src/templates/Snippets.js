@@ -95,10 +95,9 @@ function SnippetsPost({ data: { mdx } }) {
     <SnippetsTemplateStyles>
       <main className="blog-post--layout blog-post-type">
         <br />
-        <Link to="/Snippets" className="link">
-          &larr; Blog
-        </Link>{' '}
-        <span>/ {mdx.frontmatter.title}</span>
+        <Link to="/snippets" className="link">
+          &larr; All Snippets
+        </Link>
         <div className="post-title-container">
           <h1 className="blog-post-title--style">{mdx.frontmatter.title}</h1>
         </div>

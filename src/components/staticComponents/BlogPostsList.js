@@ -114,7 +114,7 @@ function BlogPostsList({ cardWithDescription, paginationLimit }) {
     query allBlogPosts {
       allMdx(
         sort: { fields: frontmatter___date, order: DESC }
-        filter: { frontmatter: { type: { ne: "case-study" } } }
+        filter: { frontmatter: { type: { nin: ["case-study", "snippet"] } } }
       ) {
         nodes {
           slug

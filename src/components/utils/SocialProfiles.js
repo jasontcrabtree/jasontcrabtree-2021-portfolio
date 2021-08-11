@@ -16,7 +16,7 @@ const SocialListStyles = styled.ul`
     padding: 8px 8px;
   }
 
-  @media screen and (min-width: 962px) {
+  @media screen and (min-width: 961px) {
     li + * {
       margin-top: 16px;
     }
@@ -28,6 +28,10 @@ const SocialListStyles = styled.ul`
     flex-wrap: wrap;
 
     margin-top: 24px !important;
+
+    li + * {
+      margin-top: 0px;
+    }
 
     li {
       margin: 8px;

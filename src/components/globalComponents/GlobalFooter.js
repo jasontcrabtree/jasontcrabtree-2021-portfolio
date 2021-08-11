@@ -151,6 +151,7 @@ function GlobalFooter() {
             Work
           </Link>
           <Link to="/blog">Blog</Link>
+          <Link to="/snippets">Snippets</Link>
         </nav>
       </section>
       <section className="footer-subscribe--layout">
