@@ -102,22 +102,21 @@ const GlobalLayoutStyles = styled.div`
   }
 
   @media screen and (max-width: 459px) {
-    margin: 16px auto;
     padding: 16px;
     max-width: fit-content;
     max-width: -moz-max-content; /* Firefox/Gecko */
     max-width: -webkit-max-content; /* Chrome */
     width: auto;
 
-    margin-bottom: 72px;
+    margin: 0px auto 72px auto;
     padding-top: 32px;
 
     border-top: 8px solid #2cb1bc;
   }
 
   @media screen and (max-width: 360px) {
-    margin-right: 16px;
-    width: calc(100vw - 32px);
+    /* margin-right: 16px;
+    width: calc(100vw - 32px); */
   }
 
   @media (prefers-color-scheme: dark) {
