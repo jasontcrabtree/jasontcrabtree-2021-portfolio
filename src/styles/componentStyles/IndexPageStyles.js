@@ -16,7 +16,7 @@ const IndexPageStyles = styled.main`
   .hero-bio--layout {
     max-width: 48ch;
     width: auto;
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .hero-bio--layout > * + * {
@@ -74,6 +74,7 @@ const IndexPageStyles = styled.main`
       margin-left: auto;
       margin-right: auto;
       max-width: 28rem;
+      width: 100%;
     }
   }
 

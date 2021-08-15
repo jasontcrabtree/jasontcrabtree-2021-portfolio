@@ -6,6 +6,7 @@ import SalesEmailsAppSVG from '../../../static/assets/svgs/coverIllustrations/Sa
 import CharacterCounterSVG from '../../../static/assets/svgs/coverIllustrations/CharacterCounterSVG.svg';
 import CSSPosterSVG from '../../../static/assets/svgs/coverIllustrations/CSSPosterSVG.svg';
 import ZoeSVG from '../../../static/assets/svgs/coverIllustrations/ZoeSVG.svg';
+import WireframeSVG from '../../../static/assets/svgs/coverIllustrations/WireframeSVG.svg';
 
 const WebsiteProjectsStyles = styled.ul`
   --cover-rotation: -4deg;
@@ -135,6 +136,24 @@ function WebsiteProjects() {
         <a
           className="code-source"
           href="https://github.com/jasontcrabtree/sales-emails"
+        >
+          Code Source
+        </a>
+      </li>
+      <li className="websites-list-card">
+        <a href="https://use-underscore.netlify.app/">
+          <WireframeSVG
+            loading="lazy"
+            width={100}
+            height={100}
+            className="cover-illustration"
+          />
+          <h2 className="card-title">Underscore</h2>
+          NextJS: A tiny BEM CSS playground
+        </a>
+        <a
+          className="code-source"
+          href="https://github.com/jasontcrabtree/underscore"
         >
           Code Source
         </a>

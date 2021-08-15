@@ -37,8 +37,12 @@ body {
 
 /* Remove list styles on ul, ol elements with a class attribute */
 ul[class],
-ul  {
+ul {
   list-style: none;
+}
+
+ul > li > ul {
+  list-style: circle;
 }
 
 /* A elements that don't have a class get default styles */
@@ -105,4 +109,15 @@ input[type='checkbox'] {
 
 .flex > * {
   margin: calc(var(--row-gap) / 2) calc(var(--column-gap) / 2);
+}
+
+/* article > * + * {
+  margin-top: var(--size-32);
+}
+article > * > * + * {
+  margin-top: var(--size-40);
+}*/
+
+img:not([alt]) {
+  filter: blur(5px);
 }

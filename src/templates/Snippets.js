@@ -46,7 +46,7 @@ const SnippetsTemplateStyles = styled.div`
 
   .post-container > ol > li,
   .post-container ul > li {
-    padding-bottom: var(--size-16);
+    padding-bottom: var(--size-8);
   }
 
   @media screen and (max-width: 960px) {

@@ -18,8 +18,7 @@ const Index = (props) => {
       <section className="hero-container" id="hero">
         <div className="hero-header-parent">
           <h1 className="hero-header-h1--style hero-header-h1--layout">
-            Front-End Developer and Designer Freelancing in Auckland, New
-            Zealand
+            Front-End Developer and Designer in Auckland, New Zealand
             {/* <DecoDots
             style="box-sizing: content-box;"
             className="decoration-dots-header--layout decoration-dots--color"
@@ -31,18 +30,19 @@ const Index = (props) => {
           <div className="hero-bio--layout">
             <p className="large-paragraph-text">
               Hello, I’m Jason. I'm a Front-End Developer and Designer focused
-              on websites and design-systems.
+              on making great websites and design-systems.
             </p>
             <p className="large-paragraph-text">
-              I run a Design and Development Studio,{' '}
+              {/* I run a Design and Development Studio,{' '}
               <a href="https://lodestone.studio">Lodestone Studio</a>, focused
-              on NZ Financial and Professional Services Companies.
+              on NZ Financial and Professional Services Companies. */}
             </p>
             <p className="large-paragraph-text">
-              I focus on using ReactJS with Gatsby, Prismic CMS for content and
-              Styled-Components or CSS with BEM for styling. Alongside these
-              tools, I always aim to work towards best practices in
-              accessibility, responsiveness, performance and security.
+              I'm a big fan of using modern JavaScript tools for websites and
+              webapps, and I'm currently learning to use tools like TypeScript,
+              Prisma, Postgres and Hasura. When working with these tools I do my
+              best to follow best practices in accessibility, performance,
+              responsiveness, and security.
             </p>
           </div>
         </div>
@@ -57,13 +57,6 @@ const Index = (props) => {
 
       <hr />
 
-      <section className="quote-container">
-        <h2 className="h2-section-title">Kind words from past colleagues</h2>
-        <ColleagueQuotes />
-      </section>
-
-      <hr />
-
       <section className="latest-posts-container">
         <h2 className="h2-section-title">Latest Blog Posts</h2>
         <BlogPostsList className="work-list-container" paginationLimit="3" />
@@ -74,6 +67,13 @@ const Index = (props) => {
       <section className="work-list-container" id="design">
         <h2 className="work-title">Design Case Studies</h2>
         <CaseStudiesList className="work-list-container" />
+      </section>
+
+      <hr />
+
+      <section className="quote-container">
+        <h2 className="h2-section-title">Kind words from past colleagues</h2>
+        <ColleagueQuotes />
       </section>
 
       <hr />
