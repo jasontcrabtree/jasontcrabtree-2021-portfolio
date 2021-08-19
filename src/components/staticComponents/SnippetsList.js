@@ -131,9 +131,6 @@ function SnippetsList() {
 
   const snippets = data.allMdx.nodes;
 
-  console.log(snippets);
-
-  console.log('');
   return (
     <ul className="snippets__list">
       {snippets.map((item, i) => (

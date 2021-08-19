@@ -93,8 +93,6 @@ export const blogPostQuery = graphql`
 const shortcodes = { CustomLazyImage };
 
 function BlogPosts({ data: { mdx } }) {
-  console.log(mdx);
-
   return (
     <BlogPostTemplateStyles>
       <SEO
