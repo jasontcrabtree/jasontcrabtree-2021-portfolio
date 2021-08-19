@@ -13,7 +13,7 @@ export default function SEO({ title, description, location, image, imageALT }) {
     social_sharing_image: {
       url:
         'https://res.cloudinary.com/jasontcrabtree/image/upload/v1594587665/Portfolio-2020/social-card.png',
-      alt: 'Jason Crabtree, Product Designer',
+      alt: 'Jason Crabtree, Product Designer portfolio social media card.',
     },
     website_url: {
       url: 'https://jasontcrabtree.com',

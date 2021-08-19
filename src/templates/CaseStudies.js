@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MDXProvider } from '@mdx-js/react';
 import CustomLazyImage from '../components/utils/CustomLazyImage.js';
+import SEO from '../components/utils/SEO.js';
 
 const CaseStudyTemplateStyles = styled.div`
   grid-column: 2 / 9;
@@ -61,6 +62,7 @@ export const caseStudiesQuery = graphql`
       body
       frontmatter {
         title
+        description
       }
     }
   }
@@ -71,6 +73,10 @@ const shortcodes = { CustomLazyImage };
 function CaseStudies({ data: { mdx } }) {
   return (
     <CaseStudyTemplateStyles>
+      <SEO
+        title={mdx.frontmatter.title}
+        description={mdx.frontmatter.description}
+      />
       <main className="work-post-parent--layout">
         <br />
         <Link to="/" className="link">

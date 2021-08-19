@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MDXProvider } from '@mdx-js/react';
 import CustomLazyImage from '../components/utils/CustomLazyImage.js';
+import SEO from '../components/utils/SEO.js';
 
 const BlogPostTemplateStyles = styled.div`
   .blog-post-type {
@@ -82,6 +83,7 @@ export const blogPostQuery = graphql`
       timeToRead
       frontmatter {
         title
+        description
         date(formatString: "D MMMM YYYY")
       }
     }
@@ -91,8 +93,14 @@ export const blogPostQuery = graphql`
 const shortcodes = { CustomLazyImage };
 
 function BlogPosts({ data: { mdx } }) {
+  console.log(mdx);
+
   return (
     <BlogPostTemplateStyles>
+      <SEO
+        title={mdx.frontmatter.title}
+        description={mdx.frontmatter.description}
+      />
       <main className="blog-post--layout blog-post-type">
         <br />
         <Link to="/blog" className="link">

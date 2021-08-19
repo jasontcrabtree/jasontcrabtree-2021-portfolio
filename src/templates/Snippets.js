@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MDXProvider } from '@mdx-js/react';
 import CustomLazyImage from '../components/utils/CustomLazyImage.js';
+import SEO from '../components/utils/SEO.js';
 
 const SnippetsTemplateStyles = styled.div`
   .blog-post-type {
@@ -82,6 +83,7 @@ export const snippetsPostQuery = graphql`
       timeToRead
       frontmatter {
         title
+        description
         date(formatString: "D MMMM YYYY")
       }
     }
@@ -93,6 +95,10 @@ const shortcodes = { CustomLazyImage };
 function SnippetsPost({ data: { mdx } }) {
   return (
     <SnippetsTemplateStyles>
+      <SEO
+        title={mdx.frontmatter.title}
+        description={mdx.frontmatter.description}
+      />
       <main className="blog-post--layout blog-post-type">
         <br />
         <Link to="/snippets" className="link">
