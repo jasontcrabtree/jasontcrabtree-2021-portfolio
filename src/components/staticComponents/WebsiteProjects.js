@@ -188,7 +188,7 @@ function WebsiteProjects() {
           CodePen Public Link
         </a>{' '}
       </li>
-      <li className="websites-list-card">
+      {/* <li className="websites-list-card">
         <a href="https://zoelenziesmith.com">
           <ZoeSVG
             loading="lazy"
@@ -199,7 +199,7 @@ function WebsiteProjects() {
           <h2 className="card-title">Zoe LS Portfolio</h2>
           Website: ZoeLenzieSmith.com
         </a>{' '}
-      </li>
+      </li> */}
     </WebsiteProjectsStyles>
   );
 }
