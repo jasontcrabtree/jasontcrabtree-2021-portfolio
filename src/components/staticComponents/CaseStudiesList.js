@@ -62,7 +62,7 @@ const WorkListItemStyles = styled.li`
   }
 `;
 
-function WorkListItem({ title, image, description, date, timeToRead, slug }) {
+function WorkListItem({ title, image, description, date, slug }) {
   return (
     <WorkListItemStyles className="work-list-card">
       <Link to={slug} className="read">
@@ -71,7 +71,6 @@ function WorkListItem({ title, image, description, date, timeToRead, slug }) {
           <h2 className="card-title">{title}</h2>
           <span className="date--style">Project Date: {date}</span>
           <p className="description">{description}</p>
-          <span>{timeToRead} min read</span> •{' '}
           <span className="card-link">View case study</span>
         </div>
       </Link>
@@ -87,8 +86,7 @@ function CaseStudiesList() {
         filter: { frontmatter: { type: { eq: "case-study" } } }
       ) {
         nodes {
-          slug
-          timeToRead
+          slug: id
           frontmatter {
             title
             image
@@ -111,7 +109,6 @@ function CaseStudiesList() {
           image={item.frontmatter.image}
           description={item.frontmatter.description}
           date={item.frontmatter.date}
-          timeToRead={Math.round(item.timeToRead * 0.8)}
           slug={`work/${item.slug}`}
         />
       ))}

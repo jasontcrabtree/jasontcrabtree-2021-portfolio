@@ -88,10 +88,12 @@ function BlogPostCard({
   title,
   description,
   date,
-  timeToRead,
   slug,
   cardWithDescription,
 }) {
+
+
+
   return (
     <BlogPostCardStyles className="work-list-card">
       <Link to={slug} className="read">
@@ -100,7 +102,6 @@ function BlogPostCard({
           <h2 className="card-title">{title}</h2>
           {cardWithDescription && <p className="description">{description}</p>}
           <span>
-            {timeToRead} min read •{' '}
             <span className="card-link">Read Blog Post</span>
           </span>
         </div>
@@ -117,8 +118,7 @@ function BlogPostsList({ cardWithDescription, paginationLimit }) {
         filter: { frontmatter: { type: { nin: ["case-study", "snippet"] } } }
       ) {
         nodes {
-          slug
-          timeToRead
+          slug: id
           frontmatter {
             title
             image
@@ -140,7 +140,6 @@ function BlogPostsList({ cardWithDescription, paginationLimit }) {
           title={item.frontmatter.title}
           description={item.frontmatter.description}
           date={item.frontmatter.date}
-          timeToRead={Math.round(item.timeToRead * 0.8)}
           slug={`/blog/${item.slug}`}
           cardWithDescription={cardWithDescription}
         />

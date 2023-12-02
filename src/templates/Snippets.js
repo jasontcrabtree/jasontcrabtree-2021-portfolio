@@ -80,7 +80,6 @@ export const snippetsPostQuery = graphql`
     mdx(id: { eq: $id }) {
       id
       body
-      timeToRead
       frontmatter {
         title
         description

@@ -114,15 +114,15 @@ const GlobalNav = () => (
       <Link to="/#hero">Home</Link>
       <Link to="/contact">Contact</Link>
       <a
-        href="/jason-crabtree-cv-mar-2021.pdf"
+        href="/jason-crabtree-cv-2023.pdf"
         aria-label="navigates to CV PDF"
       >
         Résumé
       </a>
-      <Link className="nav-hidden" to="/#code">
+      {/* <Link className="nav-hidden" to="/#code">
         Work
       </Link>
-      <Link to="/blog">Blog</Link>
+      <Link to="/blog">Blog</Link> */}
     </nav>
   </GlobalNavStyles>
 );

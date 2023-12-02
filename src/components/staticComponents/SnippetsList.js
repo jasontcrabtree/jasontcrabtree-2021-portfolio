@@ -90,7 +90,6 @@ function SnippetCard({
   title,
   description,
   date,
-  timeToRead,
   slug,
   cardWithDescription,
 }) {
@@ -116,8 +115,7 @@ function SnippetsList() {
         filter: { frontmatter: { type: { eq: "snippet" } } }
       ) {
         nodes {
-          slug
-          timeToRead
+          slug: id
           frontmatter {
             title
             image
@@ -139,7 +137,6 @@ function SnippetsList() {
           title={item.frontmatter.title}
           description={item.frontmatter.description}
           date={item.frontmatter.date}
-          timeToRead={Math.round(item.timeToRead * 0.8)}
           slug={`/snippets/${item.slug}`}
           // cardWithDescription={cardWithDescription}
         />

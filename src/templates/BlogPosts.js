@@ -80,7 +80,6 @@ export const blogPostQuery = graphql`
     mdx(id: { eq: $id }) {
       id
       body
-      timeToRead
       frontmatter {
         title
         description
@@ -108,11 +107,6 @@ function BlogPosts({ data: { mdx } }) {
         <div className="post-title-container">
           <h1 className="blog-post-title--style">{mdx.frontmatter.title}</h1>
         </div>
-        <aside>
-          <span className="date-style">
-            {mdx.frontmatter.date} | {mdx.timeToRead} min read time
-          </span>
-        </aside>
         <article className="post-container">
           <MDXProvider components={shortcodes}>
             <MDXRenderer>{mdx.body}</MDXRenderer>

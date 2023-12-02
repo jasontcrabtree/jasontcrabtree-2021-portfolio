@@ -57,7 +57,7 @@ const Index = (props) => {
 
       <hr />
 
-      <section className="latest-posts-container">
+      {/* <section className="latest-posts-container">
         <h2 className="h2-section-title">Latest Blog Posts</h2>
         <BlogPostsList className="work-list-container" paginationLimit="3" />
       </section>
@@ -69,19 +69,19 @@ const Index = (props) => {
         <CaseStudiesList className="work-list-container" />
       </section>
 
-      <hr />
+      <hr /> */}
 
       <section className="quote-container">
         <h2 className="h2-section-title">Kind words from past colleagues</h2>
         <ColleagueQuotes />
       </section>
 
-      <hr />
+      {/* <hr />
 
       <section className="latest-posts-container">
         <h2 className="h2-section-title">Latest Dribbble Shots</h2>
         <DribbbleGallery />
-      </section>
+      </section> */}
     </IndexPageStyles>
   );
 };

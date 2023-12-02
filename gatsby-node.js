@@ -1,3 +1,5 @@
+const { createFilePath } = require(`gatsby-source-filesystem`)
+
 const graphQLWrapper = (promise) =>
   promise.then((pages) => {
     if (pages.errors) throw pages.errors;
@@ -13,7 +15,6 @@ async function createRepeatableCaseStudies({ graphql, actions, reporter }) {
       {
         allMdx {
           nodes {
-            slug
             id
             frontmatter {
               type
@@ -51,7 +52,6 @@ async function createRepeatableBlogPosts({ graphql, actions, reporter }) {
       {
         allMdx {
           nodes {
-            slug
             id
             frontmatter {
               type
@@ -92,7 +92,6 @@ async function createRepeatableSnippetsPages({ graphql, actions, reporter }) {
       {
         allMdx {
           nodes {
-            slug
             id
             frontmatter {
               type
