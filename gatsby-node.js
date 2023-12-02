@@ -29,18 +29,18 @@ async function createRepeatableCaseStudies({ graphql, actions, reporter }) {
     reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query');
   }
 
-  // Create pages for each Page in Prismic using the selected template.
-  caseStudiesPages.data.allMdx.nodes.forEach((node) => {
-    if (node.frontmatter.type === 'case-study') {
-      actions.createPage({
-        path: `/work/${node.slug}`,
-        component: caseStudiesTemplate,
-        context: {
-          id: node.id,
-        },
-      });
-    }
-  });
+  // // Create pages for each Page in Prismic using the selected template.
+  // caseStudiesPages.data.allMdx.nodes.forEach((node) => {
+  //   if (node.frontmatter.type === 'case-study') {
+  //     actions.createPage({
+  //       path: `/work/${node.slug}`,
+  //       component: caseStudiesTemplate,
+  //       context: {
+  //         id: node.id,
+  //       },
+  //     });
+  //   }
+  // });
 }
 
 async function createRepeatableBlogPosts({ graphql, actions, reporter }) {
