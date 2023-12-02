@@ -67,20 +67,20 @@ async function createRepeatableBlogPosts({ graphql, actions, reporter }) {
   }
 
   // Create pages for each Page in Prismic using the selected template.
-  blogPostsPages.data.allMdx.nodes.forEach((node) => {
-    if (
-      node.frontmatter.type !== 'case-study' &&
-      node.frontmatter.type !== 'snippet'
-    ) {
-      actions.createPage({
-        path: `/blog/${node.slug}`,
-        component: blogPostsTemplate,
-        context: {
-          id: node.id,
-        },
-      });
-    }
-  });
+  // blogPostsPages.data.allMdx.nodes.forEach((node) => {
+  //   if (
+  //     node.frontmatter.type !== 'case-study' &&
+  //     node.frontmatter.type !== 'snippet'
+  //   ) {
+  //     actions.createPage({
+  //       path: `/blog/${node.slug}`,
+  //       component: blogPostsTemplate,
+  //       context: {
+  //         id: node.id,
+  //       },
+  //     });
+  //   }
+  // });
 }
 
 async function createRepeatableSnippetsPages({ graphql, actions, reporter }) {
@@ -107,17 +107,17 @@ async function createRepeatableSnippetsPages({ graphql, actions, reporter }) {
   }
 
   // Create pages for each Page in Prismic using the selected template.
-  snippetsPage.data.allMdx.nodes.forEach((node) => {
-    if (node.frontmatter.type === 'snippet') {
-      actions.createPage({
-        path: `/snippets/${node.slug}`,
-        component: snippetsTemplate,
-        context: {
-          id: node.id,
-        },
-      });
-    }
-  });
+  // snippetsPage.data.allMdx.nodes.forEach((node) => {
+  //   if (node.frontmatter.type === 'snippet') {
+  //     actions.createPage({
+  //       path: `/snippets/${node.slug}`,
+  //       component: snippetsTemplate,
+  //       context: {
+  //         id: node.id,
+  //       },
+  //     });
+  //   }
+  // });
 }
 
 // exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -136,8 +136,8 @@ async function createRepeatableSnippetsPages({ graphql, actions, reporter }) {
 exports.createPages = async (params) => {
   await Promise.all([
     // async create pages with functions
-    createRepeatableCaseStudies(params),
-    createRepeatableBlogPosts(params),
-    createRepeatableSnippetsPages(params),
+    // createRepeatableCaseStudies(params),
+    // createRepeatableBlogPosts(params),
+    // createRepeatableSnippetsPages(params),
   ]);
 };
